@@ -20,15 +20,16 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://github.com',
+  url: 'https://huudinh.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/huudinh/',
+  baseUrl: '/blogs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'huudinh', // Usually your GitHub org/user name.
   projectName: 'blogs', // Usually your repo name.
+  deploymentBranch: 'gh-pages',   // branch để deploy (mặc định là gh-pages)
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
