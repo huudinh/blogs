@@ -2,11 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huudinh.github.io/blogs/blog</id>
     <title>My Site Blog</title>
-    <updated>2025-08-19T00:00:00.000Z</updated>
+    <updated>2025-08-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huudinh.github.io/blogs/blog"/>
     <subtitle>My Site Blog</subtitle>
     <icon>https://huudinh.github.io/blogs/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Tôi có thể theo đuổi nghè lập trình Frontend không?]]></title>
+        <id>https://huudinh.github.io/blogs/blog/toi-co-the-theo-duoi-nghe-lap-trinh-frontend-khong</id>
+        <link href="https://huudinh.github.io/blogs/blog/toi-co-the-theo-duoi-nghe-lap-trinh-frontend-khong"/>
+        <updated>2025-08-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Khi tự đánh giá mình có học lực và tư duy logic ở mức “bình thường”...]]></summary>
+        <content type="html"><![CDATA[<p>Khi tự đánh giá mình có học lực và tư duy logic ở mức “bình thường”...</p>
+<p>Câu hỏi này rất thực tế và mình đã thẳng thắn nhìn nhận bản thân. Câu trả lời là: <strong>hoàn toàn có thể theo đuổi lập trình Frontend</strong>, ngay cả khi bạn tự đánh giá mình có học lực và tư duy logic ở mức “bình thường”.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vì-sao-bạn-vẫn-có-thể-theo-đuổi-frontend">Vì sao bạn vẫn có thể theo đuổi Frontend?<a href="https://huudinh.github.io/blogs/blog/toi-co-the-theo-duoi-nghe-lap-trinh-frontend-khong#v%C3%AC-sao-b%E1%BA%A1n-v%E1%BA%ABn-c%C3%B3-th%E1%BB%83-theo-%C4%91u%E1%BB%95i-frontend" class="hash-link" aria-label="Direct link to Vì sao bạn vẫn có thể theo đuổi Frontend?" title="Direct link to Vì sao bạn vẫn có thể theo đuổi Frontend?">​</a></h3>
+<ul>
+<li>
+<p><strong>Frontend không đòi hỏi phải là “thiên tài toán học”</strong><br>
+<!-- -->Khác với một số lĩnh vực như AI hay xử lý dữ liệu lớn, Frontend thiên về <strong>tư duy giao diện</strong>, <strong>trải nghiệm người dùng</strong>, và <strong>tính thẩm mỹ</strong>. Những kỹ năng này có thể rèn luyện qua thực hành, không cần IQ cao.</p>
+</li>
+<li>
+<p><strong>Kỹ năng thực tế quan trọng hơn điểm số</strong><br>
+<!-- -->Nhà tuyển dụng Frontend thường quan tâm đến <strong>portfolio</strong>, <strong>dự án cá nhân</strong>, và khả năng làm việc nhóm hơn là học lực. Nếu bạn làm được một website đẹp, responsive, có UX tốt — thì bạn đã ghi điểm rồi.</p>
+</li>
+<li>
+<p><strong>Tư duy logic có thể cải thiện qua luyện tập</strong><br>
+<!-- -->Bạn không cần phải giỏi logic ngay từ đầu. Việc học JavaScript, xử lý DOM, hay làm việc với React sẽ giúp bạn rèn luyện tư duy từng bước. Quan trọng là <strong>kiên trì và không bỏ cuộc</strong>.</p>
+</li>
+<li>
+<p><strong>Tài nguyên học tập rất dễ tiếp cận</strong><br>
+<!-- -->Có hàng ngàn khóa học miễn phí, video hướng dẫn, và cộng đồng hỗ trợ. Bạn không đơn độc đâu.</p>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="gợi-ý-lộ-trình-học-frontend-cho-người-mới-bắt-đầu">Gợi ý lộ trình học Frontend cho người mới bắt đầu<a href="https://huudinh.github.io/blogs/blog/toi-co-the-theo-duoi-nghe-lap-trinh-frontend-khong#g%E1%BB%A3i-%C3%BD-l%E1%BB%99-tr%C3%ACnh-h%E1%BB%8Dc-frontend-cho-ng%C6%B0%E1%BB%9Di-m%E1%BB%9Bi-b%E1%BA%AFt-%C4%91%E1%BA%A7u" class="hash-link" aria-label="Direct link to Gợi ý lộ trình học Frontend cho người mới bắt đầu" title="Direct link to Gợi ý lộ trình học Frontend cho người mới bắt đầu">​</a></h3>
+<table><thead><tr><th>Giai đoạn</th><th>Mục tiêu</th><th>Công cụ gợi ý</th></tr></thead><tbody><tr><td>1. Cơ bản</td><td>HTML, CSS, JavaScript</td><td>freeCodeCamp, W3Schools</td></tr><tr><td>2. Thực hành</td><td>Làm website đơn giản</td><td>GitHub, CodePen</td></tr><tr><td>3. Framework</td><td>Học React hoặc Vue</td><td>Scrimba, Udemy</td></tr><tr><td>4. Dự án</td><td>Làm portfolio cá nhân</td><td>Netlify, Vercel</td></tr><tr><td>5. Kỹ năng mềm</td><td>Giao tiếp, teamwork</td><td>Tham gia nhóm học, hackathon</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="một-lời-nhắn-riêng-cho-bạn">Một lời nhắn riêng cho bạn<a href="https://huudinh.github.io/blogs/blog/toi-co-the-theo-duoi-nghe-lap-trinh-frontend-khong#m%E1%BB%99t-l%E1%BB%9Di-nh%E1%BA%AFn-ri%C3%AAng-cho-b%E1%BA%A1n" class="hash-link" aria-label="Direct link to Một lời nhắn riêng cho bạn" title="Direct link to Một lời nhắn riêng cho bạn">​</a></h3>
+<p>Bạn không cần phải là người giỏi nhất — bạn chỉ cần là người <strong>kiên trì nhất</strong>. Nếu bạn học mỗi ngày một chút, làm từng dự án nhỏ, và không ngại hỏi khi gặp khó khăn, thì bạn sẽ tiến xa hơn rất nhiều người bắt đầu với lợi thế nhưng bỏ cuộc giữa chừng.</p>
+<p>Nếu bạn muốn, mình có thể giúp bạn lên một kế hoạch học cụ thể theo thời gian biểu của bạn. Bạn đang có bao nhiêu thời gian mỗi tuần để học?</p>]]></content>
+        <author>
+            <name>Dinh Trieu</name>
+            <uri>https://thaygiaofrontend.com</uri>
+        </author>
+        <category label="blog" term="blog"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Tạo Blog miễn phí với Docusaurus]]></title>
         <id>https://huudinh.github.io/blogs/blog/tao-blog-mien-phi</id>
