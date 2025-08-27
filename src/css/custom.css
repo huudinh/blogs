@@ -28,3 +28,33 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Thay đổi màu nền của body */
+body {
+  /* background-color: #fbfbfb; */
+  font-size:18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Tùy chỉnh font cho tiêu đề */
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Roboto', sans-serif;
+  font: 18px;
+}
+
+h1 {
+  font-size: 2rem; /* hoặc 40px */
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+h4, h5, h6 {
+  font-size: 1.3rem;
+}
+

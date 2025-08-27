@@ -22,3 +22,25 @@ For example, use JSX to create an interactive button:
 ```
 
 <button onClick={() => alert('button clicked!')}>Click me!</button>
+
+
+```jsx
+# Demo React Component
+import React from 'react';
+
+export const HelloButton = () => {
+  const handleClick = () => alert('Xin chào từ React!');
+  return <button onClick={handleClick}>Bấm vào đây</button>;
+}
+```
+
+import React from 'react';
+
+export const HelloButton = () => {
+  const handleClick = () => alert('Xin chào từ React!');
+  return <button onClick={handleClick}>Bấm vào đây</button>;
+}
+
+
+
+<HelloButton />
