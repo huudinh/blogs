@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>My Site Blog</title>
+        <title>Frontend Developer Blogs Blog</title>
         <link>https://huudinh.github.io/blogs/blog</link>
-        <description>My Site Blog</description>
+        <description>Frontend Developer Blogs Blog</description>
         <lastBuildDate>Thu, 21 Aug 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
@@ -161,6 +161,8 @@
 <li>GitHub Pages sẽ tự động publish branch <code>gh-pages</code>.</li>
 </ul>
 <hr>
+<p>Trường hợp phát sinh lỗi bạn cần cấu hình lại tài khoản github cho blogs bằng lệnh sau</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">set GIT_USER=ten-tai-khoan</span><br></span></code></pre></div></div>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="bước-6-truy-cập-website">BƯỚC 6: TRUY CẬP WEBSITE<a href="https://huudinh.github.io/blogs/blog/tao-blog-mien-phi#b%C6%B0%E1%BB%9Bc-6-truy-c%E1%BA%ADp-website" class="hash-link" aria-label="Direct link to BƯỚC 6: TRUY CẬP WEBSITE" title="Direct link to BƯỚC 6: TRUY CẬP WEBSITE">​</a></h4>
 <p>Truy cập tại:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">https://&lt;tên-user&gt;.github.io/&lt;tên-repo&gt;/</span><br></span></code></pre></div></div>
