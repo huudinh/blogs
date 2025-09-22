@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Frontend Developer Blogs',
+  tagline: 'React are cool',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -38,9 +38,19 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'vi',
+    locales: ['vi'],
   },
+
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-RKMVJBN6MY', // Thay bằng Measurement ID của bạn
+        anonymizeIP: true, // Tùy chọn: ẩn địa chỉ IP người dùng
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -82,7 +92,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Dinh Trieu',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -92,11 +102,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'React Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/huudinh',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,6 +119,10 @@ const config = {
             title: 'Docs',
             items: [
               {
+                label: 'Frameworks Frontend',
+                to: 'https://huudinh.github.io/',
+              },
+              {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
@@ -118,16 +132,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'YouTube',
+                href: 'https://youtube.com/huudinh',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Facebook',
+                href: 'https://facebook.com/huudinh85',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Tiktok',
+                href: 'https://tiktok.com/@thaygiaofrontend',
               },
             ],
           },
@@ -140,18 +154,24 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/huudinh/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Blogs, Inc. Built with DinhTrieu.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Frontend Developer Blogs, Inc. Built with DinhTrieu.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      docs: {
+        sidebar: {
+          hideable: true, // Cho phép người dùng ẩn/hiện sidebar
+        },
+      },
     }),
 };
 
 export default config;
+

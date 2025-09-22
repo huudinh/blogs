@@ -31,7 +31,6 @@
 
 /* Thay đổi màu nền của body */
 body {
-  /* background-color: #fbfbfb; */
   font-size:18px;
   font-family: 'Roboto', sans-serif;
 }
@@ -39,7 +38,6 @@ body {
 /* Tùy chỉnh font cho tiêu đề */
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Roboto', sans-serif;
-  font: 18px;
 }
 
 h1 {
@@ -51,10 +49,41 @@ h2 {
 }
 
 h3{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 h4, h5, h6 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
+.menu__link{
+  font-size:16px;
+}
+.table-of-contents li{
+  font-size:15px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.table-of-contents li li{
+  font-size:14px;
+}
+iframe{
+  width: 100%!important;
+  border: none;
+  aspect-ratio: 16/9!important;
+  height: auto!important;
+}
+
+.toc_btn{
+  color:#0f9a0f;
+  cursor: pointer;
+  margin:0;
+  font-size:15px;
+}
+.toc_btn:hover{
+  text-decoration: underline;
+}
+@media (max-width:600px) {
+  .toc_btn{
+    display:none;
+  }
+}
