@@ -58,11 +58,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          routeBasePath: '/docs',
+          sidebarPath: require.resolve('./sidebars.js'),
+          // sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -100,16 +102,27 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'reactJsSidebar',
             position: 'left',
-            label: 'React Tutorial',
+            label: 'React JS',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'reactNativeSidebar',
+            position: 'left',
+            label: 'React Native',
+          },
+          {to: '/blog', label: 'Blogs', position: 'left'},
           {
             href: 'https://github.com/huudinh',
             label: 'GitHub',
             position: 'right',
           },
+          {
+            to: '/favorites',
+            label: 'Bài viết yêu thích',
+            position: 'left',
+          }
         ],
       },
       footer: {

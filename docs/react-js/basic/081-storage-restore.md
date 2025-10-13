@@ -89,30 +89,30 @@ Chúng ta cần đặt giá trị mặc định cho mảng nếu mong đợi loc
 
 ---
 
-### 1. Khôi phục trạng thái từ localStorage nghĩa là gì??
+### Câu 1. Khôi phục trạng thái từ localStorage nghĩa là gì??
 
 Nghĩa là giá trị khởi tạo mà chúng ta cung cấp cho useState (hoặc biến trạng thái khác) sẽ được lấy từ dữ liệu đã lưu trong localStorage. Điều này cho phép lưu và khôi phục thiết lập (ví dụ: chế độ tối) khi người dùng quay lại trang.
 
-### 2. Khi lưu số trong localStorage, làm sao để đọc lại dưới dạng số?
+### Câu 2. Khi lưu số trong localStorage, làm sao để đọc lại dưới dạng số?
 
 Cần chuyển đổi chuỗi sang số bằng Number.parseInt() hoặc Number.parseFloat().
 
-### 3. Làm sao để đọc giá trị boolean từ localStorage?
+### Câu 3. Làm sao để đọc giá trị boolean từ localStorage?
 
 ```js title="So sánh trực tiếp với chuỗi "true":"
 const isDarkMode = localStorage.getItem("dark-mode") === "true";
 ```
 
-### 4. Tại sao cần gán giá trị mặc định khi đọc mảng từ localStorage?
+### Câu 4. Tại sao cần gán giá trị mặc định khi đọc mảng từ localStorage?
 
 Để tránh lỗi khi gọi các phương thức mảng như .map() hoặc .filter() nếu getItem() trả về null.
 
-### 5. Sự khác biệt giữa Number.parseInt() và Number.parseFloat() là gì?
+### Câu 5. Sự khác biệt giữa Number.parseInt() và Number.parseFloat() là gì?
 
 Number.parseInt() chuyển đổi chuỗi thành số nguyên.
 
 Number.parseFloat() chuyển đổi chuỗi thành số thực, giữ lại phần thập phân.
 
-### 6. Lợi ích của việc khôi phục trạng thái từ localStorage trong ứng dụng React là gì?
+### Câu 6. Lợi ích của việc khôi phục trạng thái từ localStorage trong ứng dụng React là gì?
 
 Giúp ứng dụng ghi nhớ lựa chọn của người dùng (như chế độ tối/sáng, ngôn ngữ, thiết lập cá nhân) ngay cả khi người dùng reload trang hoặc quay lại sau này.

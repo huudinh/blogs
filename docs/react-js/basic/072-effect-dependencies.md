@@ -109,27 +109,27 @@ useEffect(() => {
 ## FAQ - Câu hỏi thường gặp khi phỏng vấn
 ---
 
-### 1. Dependencies trong useEffect là gì?
+### Câu 1. Dependencies trong useEffect là gì?
 
 Dependencies là đối số thứ hai tùy chọn của hàm useEffect trong React, được truyền dưới dạng một mảng. Nó đóng vai trò quan trọng trong việc kiểm soát tần suất hàm hiệu ứng (effectCallback) được chạy lại. Mặc định, nếu không truyền đối số này (tức là nó là null), hiệu ứng sẽ chạy sau mỗi lần component được hiển thị ban đầu và sau mỗi lần component hiển thị lại.
 
-### 2. Dependencies hoạt động như thế nào để kiểm soát việc chạy lại hiệu ứng?
+### Câu 2. Dependencies hoạt động như thế nào để kiểm soát việc chạy lại hiệu ứng?
 
 Dependencies hoạt động bằng cách cho phép React so sánh các giá trị trong mảng phụ thuộc giữa lần hiển thị trước và lần hiển thị hiện tại của component. Nếu bất kỳ giá trị nào trong mảng dependencies thay đổi, React sẽ gọi lại hàm hiệu ứng. Nếu tất cả các giá trị vẫn giữ nguyên, hàm hiệu ứng sẽ không được gọi lại, giúp tối ưu hóa hiệu suất và tránh các vòng lặp vô hạn không mong muốn.
 
-### 3. Tại sao chúng ta cần sử dụng dependencies?
+### Câu 3. Tại sao chúng ta cần sử dụng dependencies?
 
 Việc sử dụng dependencies là cần thiết để kiểm soát khi nào một hiệu ứng nên được thực thi. Nếu không có dependencies, useEffect sẽ chạy sau mỗi lần component render, điều này có thể dẫn đến các vấn đề về hiệu suất hoặc hành vi không mong muốn, đặc biệt khi các hiệu ứng thực hiện các thao tác tốn kém hoặc gây ra các vòng lặp vô hạn. Nó cho phép bạn tối ưu hóa code và chỉ chạy hiệu ứng khi cần thiết.
 
-### 4. Có thể truyền nhiều giá trị vào mảng dependencies không?
+### Câu 4. Có thể truyền nhiều giá trị vào mảng dependencies không?
 
 Có, bạn có thể cung cấp nhiều giá trị trong mảng dependencies. Các giá trị này có thể đến từ state hoặc props của component. Khi có nhiều giá trị, React sẽ kiểm tra sự thay đổi của từng giá trị trong mảng. Nếu bất kỳ giá trị nào thay đổi, hiệu ứng sẽ được chạy lại.
 
-### 5. Điều gì xảy ra khi truyền một mảng rỗng làm dependencies?
+### Câu 5. Điều gì xảy ra khi truyền một mảng rỗng làm dependencies?
 
 Khi bạn truyền một mảng rỗng [] làm đối số dependencies, hiệu ứng sẽ chỉ chạy một lần duy nhất sau lần hiển thị đầu tiên của component. Điều này là do React so sánh cùng một thực thể của mảng rỗng, và không có giá trị nào bên trong mảng đó có thể thay đổi, dẫn đến kết quả so sánh luôn giống nhau.
 
-### 6. Khi nào nên sử dụng mảng rỗng làm dependencies?
+### Câu 6. Khi nào nên sử dụng mảng rỗng làm dependencies?
 
 Việc truyền một mảng rỗng [] rất hữu ích khi bạn muốn chạy hiệu ứng chỉ một lần sau khi component đã được gắn kết vào DOM. Điều này thường được áp dụng trong các trường hợp như:
 
@@ -137,7 +137,7 @@ Khởi tạo các thư viện bên ngoài (ví dụ: thư viện bản đồ, bi
 Gửi các cuộc gọi phân tích (analytics) khi component được tải lần đầu.
 Thiết lập các sự kiện chỉ cần lắng nghe một lần.
 
-### 7. Sự khác biệt giữa không truyền dependencies và truyền mảng rỗng là gì?
+### Câu 7. Sự khác biệt giữa không truyền dependencies và truyền mảng rỗng là gì?
 
 Không truyền dependencies (mặc định là null): Hiệu ứng sẽ chạy sau mỗi lần hiển thị ban đầu và sau mỗi lần component hiển thị lại (render). Điều này có thể dẫn đến vòng lặp vô hạn nếu hiệu ứng gây ra một cập nhật trạng thái mới.
 Truyền mảng rỗng []: Hiệu ứng chỉ chạy một lần duy nhất sau lần hiển thị đầu tiên của component.

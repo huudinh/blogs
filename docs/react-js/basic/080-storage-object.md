@@ -56,28 +56,28 @@ console.log(person); // {id: 1, name: "Sam"}
 
 ---
 
-### 1. Tại sao cần phải chuyển đổi object hoặc array thành chuỗi khi lưu vào LocalStorage?
+### Câu 1. Tại sao cần phải chuyển đổi object hoặc array thành chuỗi khi lưu vào LocalStorage?
 
 Vì LocalStorage chỉ chấp nhận giá trị là chuỗi, nên ta cần chuyển đổi object hoặc array thành chuỗi bằng JSON.stringify() trước khi lưu.
 
-### 2. Hàm nào được sử dụng để chuyển đổi object thành chuỗi trước khi lưu vào LocalStorage?
+### Câu 2. Hàm nào được sử dụng để chuyển đổi object thành chuỗi trước khi lưu vào LocalStorage?
 
 Hàm JSON.stringify() được dùng để chuyển đổi object hoặc array thành chuỗi JSON.
 
-### 3. Làm sao để khôi phục lại object từ LocalStorage sau khi đã lưu?
+### Câu 3. Làm sao để khôi phục lại object từ LocalStorage sau khi đã lưu?
 
 Dùng localStorage.getItem() để lấy chuỗi và JSON.parse() để chuyển ngược lại thành object.
 
-### 4. Nếu bạn quên dùng JSON.parse() sau khi lấy dữ liệu từ LocalStorage thì điều gì xảy ra?
+### Câu 4. Nếu bạn quên dùng JSON.parse() sau khi lấy dữ liệu từ LocalStorage thì điều gì xảy ra?
 
 Dữ liệu vẫn sẽ ở dạng chuỗi JSON, không thể truy cập trực tiếp các thuộc tính của object
 
-### 5. Sự khác biệt giữa JSON.stringify() và JSON.parse() là gì?
+### Câu 5. Sự khác biệt giữa JSON.stringify() và JSON.parse() là gì?
 
 JSON.stringify() chuyển đổi object/array → chuỗi JSON.
 
 JSON.parse() chuyển đổi chuỗi JSON → object/array.
 
-### 6. Làm sao để kiểm tra dữ liệu trong LocalStorage bằng trình duyệt?
+### Câu 6. Làm sao để kiểm tra dữ liệu trong LocalStorage bằng trình duyệt?
 
 Mở DevTools → tab Application → mục LocalStorage → chọn domain hiện tại, bạn sẽ thấy danh sách key – value được lưu.

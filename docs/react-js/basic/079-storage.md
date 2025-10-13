@@ -106,22 +106,22 @@ Mỗi khi trạng thái `random` thay đổi, hiệu ứng sẽ chạy, từ đ�
 
 ---
 
-### 1. localStorage lưu dữ liệu ở định dạng nào
+### Câu 1. localStorage lưu dữ liệu ở định dạng nào
 
 Tất cả khóa và giá trị đều được lưu dưới dạng chuỗi (string)
 
-### 2. Khi nào không nên dùng localStorage?
+### Câu 2. Khi nào không nên dùng localStorage?
 
 Khi cần lưu dữ liệu quá lớn, hoặc khi phải đọc/ghi liên tục với tần suất cao (có thể làm chậm hiệu suất).
 
-### 3. Ưu điểm của localStorage là gì?
+### Câu . Ưu điểm của localStorage là gì?
 
 Dễ dùng, dữ liệu bền vững (không mất khi reload trang), hỗ trợ trên hầu hết các trình duyệt.
 
-### 4. Nhược điểm của localStorage là gì?
+### Câu 4. Nhược điểm của localStorage là gì?
 
 Chỉ lưu được chuỗi, dung lượng giới hạn, đồng bộ (có thể làm chậm ứng dụng nếu dùng quá nhiều).
 
-### 5. Dung lượng tối đa mà localStorage có thể lưu trữ là bao nhiêu?
+### Câu 5. Dung lượng tối đa mà localStorage có thể lưu trữ là bao nhiêu?
 
 Khoảng 5MB cho mỗi domain (tùy vào trình duyệt).

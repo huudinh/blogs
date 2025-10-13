@@ -136,31 +136,31 @@ Kể từ React 18, hook `useEffect` chỉ được coi là phương án cuối 
 
 ---
 
-### 1. useEffect là gì và vai trò của nó trong function component là gì?
+### Câu 1. useEffect là gì và vai trò của nó trong function component là gì?
 
 useEffect là một Hook trong React cho phép bạn quản lý các tác vụ phụ (side effects) trong component hàm. Các tác vụ phụ này bao gồm việc gọi API, tương tác với DOM, hoặc đăng ký và hủy đăng ký sự kiện. Về cơ bản, nó cung cấp các chức năng tương tự như các phương thức vòng đời (componentDidMount, componentDidUpdate, componentWillUnmount) trong các class component, nhưng được thiết kế để sử dụng trong môi trường hàm, giúp việc quản lý logic vòng đời trở nên đơn giản và dễ đọc hơn.
 
-### 2. Làm thế nào để chạy một hiệu ứng chỉ một lần sau khi component được gắn kết (mounted)?
+### Câu 2. Làm thế nào để chạy một hiệu ứng chỉ một lần sau khi component được gắn kết (mounted)?
 
 Để chạy một hiệu ứng chỉ một lần sau khi component được gắn kết vào DOM, bạn cần truyền một mảng rỗng [] làm danh sách phụ thuộc cho useEffect.
 
-### 3. Làm thế nào để thực hiện hành động dọn dẹp khi component bị hủy gắn kết (unmounted)?
+### Câu 3. Làm thế nào để thực hiện hành động dọn dẹp khi component bị hủy gắn kết (unmounted)?
 
 Để thực hiện hành động dọn dẹp khi component bị hủy gắn kết, bạn có thể trả về một hàm từ bên trong useEffect. Hàm này sẽ được gọi ngay trước khi component bị xóa khỏi DOM.
 
-### 4. Khi nào useEffect chạy nếu không có danh sách phụ thuộc được cung cấp?
+### Câu 4. Khi nào useEffect chạy nếu không có danh sách phụ thuộc được cung cấp?
 
 Nếu bạn không truyền bất kỳ danh sách phụ thuộc nào (mảng thứ hai) cho useEffect, hiệu ứng sẽ chạy sau mỗi lần component được hiển thị lại, cũng như sau lần hiển thị đầu tiên (khi component được gắn kết).
 
-### 5. Làm thế nào để chỉ chạy useEffect khi một giá trị cụ thể (state hoặc props) thay đổi?
+### Câu 5. Làm thế nào để chỉ chạy useEffect khi một giá trị cụ thể (state hoặc props) thay đổi?
 
 Bạn có thể kiểm soát việc useEffect chạy lại khi nào bằng cách truyền các giá trị mà bạn muốn theo dõi vào mảng phụ thuộc. Hiệu ứng sẽ chỉ chạy lại nếu ít nhất một trong các giá trị trong mảng phụ thuộc thay đổi. 
 
-### 6. Có thể sử dụng nhiều useEffect trong một component không?
+### Câu 6. Có thể sử dụng nhiều useEffect trong một component không?
 
 Có, bạn hoàn toàn có thể sử dụng nhiều hook useEffect trong cùng một component. Mỗi useEffect có thể có danh sách phụ thuộc riêng, cho phép bạn tách biệt logic và quản lý các hiệu ứng phụ một cách độc lập. Quan trọng là phải tuân thủ các quy tắc của Hooks: tất cả các Hooks phải được gọi ở đầu hàm component và không được gói trong các câu lệnh điều kiện như if.
 
-### 7. Cần lưu ý gì về việc sử dụng useEffect trong React 18 trở lên?
+### Câu 7. Cần lưu ý gì về việc sử dụng useEffect trong React 18 trở lên?
 
 Kể từ React 18, useEffect được coi là một phương án cuối cùng và không nên bị lạm dụng. Chức năng chính của nó là để đồng bộ hóa với các API bên ngoài hoặc các hệ thống không phải React. Điều này ngụ ý rằng bạn không nên sử dụng useEffect một cách thường xuyên cho mọi tác vụ nhỏ. Thay vào đó, hãy tìm kiếm các giải pháp khác, tối ưu hơn nếu có thể, để quản lý state và logic trong component của bạn.
 

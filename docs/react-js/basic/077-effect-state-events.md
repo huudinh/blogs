@@ -96,26 +96,26 @@ useEffect(() => {
 
 ---
 
-### 1. Trong React, điều gì xảy ra khi gọi setCount(prevCount => prevCount + 1)?
+### Câu 1. Trong React, điều gì xảy ra khi gọi setCount(prevCount => prevCount + 1)?
 
 React sẽ lên lịch để cập nhật giá trị count, sau đó re-render component với giá trị count mới.
 
-### 2. Tại sao khi gọi console.log(count) ngay sau setCount thì giá trị in ra lại là giá trị cũ?
+### Câu 2. Tại sao khi gọi console.log(count) ngay sau setCount thì giá trị in ra lại là giá trị cũ?
 
 Vì cập nhật state trong React là bất đồng bộ (asynchronous). Giá trị count chỉ được cập nhật sau khi React hoàn thành re-render, nên trong cùng một lần gọi hàm, bạn vẫn thấy giá trị cũ.
 
-### 3. Khi nào bạn nhận được giá trị count mới?
+### Câu 3. Khi nào bạn nhận được giá trị count mới?
 
 Khi component được re-render và thực thi lại dòng const [count, setCount] = useState(0), khi đó React sẽ cung cấp giá trị count đã được cập nhật.
 
-### 4. Tại sao React lại thiết kế việc cập nhật state theo cách bất đồng bộ?
+### Câu 4. Tại sao React lại thiết kế việc cập nhật state theo cách bất đồng bộ?
 
 Để tối ưu hiệu suất — React có thể gộp nhiều cập nhật state lại và thực hiện re-render một lần thay vì nhiều lần liên tiếp.
 
-### 5. Làm sao để thực hiện hành động (ví dụ log ra console) sau khi state được cập nhật?
+### Câu 5. Làm sao để thực hiện hành động (ví dụ log ra console) sau khi state được cập nhật?
 
 Đặt logic đó bên trong useEffect và thêm biến state vào mảng dependencies
 
-### 6. Tại sao lại cần kiểm tra điều kiện trong useEffect?
+### Câu 6. Tại sao lại cần kiểm tra điều kiện trong useEffect?
 
 Vì useEffect sẽ luôn chạy ít nhất một lần sau khi component render lần đầu. Dùng if giúp bạn giới hạn chỉ chạy code khi thỏa mãn điều kiện (ví dụ: chỉ khi count > 0).

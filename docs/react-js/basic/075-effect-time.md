@@ -89,7 +89,7 @@ Bạn có thể hiểu đoạn code trên như sau:
 3. Hàm đó gọi `setInterval` để lên lịch gọi hàm `setDate(new Date())` mỗi giây một lần.
 4. Mỗi lần gọi `setDate()`, component sẽ được hiển thị lại, hiển thị thời gian được cập nhật trên màn hình.
 
-## VI. Xử lý lỗi rò rỉ bộ nớ trong JS
+## VI. Xử lý lỗi rò rỉ bộ nhớ trong JS
 
 Đoạn code trên gây ra lỗi rò rỉ bộ nhớ vì chúng ta chưa xóa `interval` được tạo với `setInterval`. Dưới đây là cách giải quyết vấn đề trong JavaScript:
 
@@ -115,25 +115,27 @@ clearInterval(intervalId);
 
 :::
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UBp2LHimX_0?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## FAQ - Câu hỏi thường gặp khi phỏng vấn
 
 ---
 
-### 1. Tại sao cần tạo một trạng thái date trong component Clock?
+### Câu 1. Tại sao cần tạo một trạng thái date trong component Clock?
 
 Vì chúng ta cần lưu trữ và cập nhật thời gian hiện tại trong component để mỗi khi thời gian thay đổi, component sẽ tự động render lại và hiển thị đúng thời gian mới nhất.
 
-### 2. setInterval hoạt động như thế nào?
+### Câu 2. setInterval hoạt động như thế nào?
 
 Nó lặp đi lặp lại gọi hàm được truyền vào sau mỗi khoảng thời gian X mili giây (ví dụ 1000ms = 1s).
 
 Nó không đảm bảo chính xác tuyệt đối về thời gian (có thể bị trễ nếu trình duyệt bận xử lý tác vụ khác).
 
-### 3. Tại sao cần dùng useEffect khi tạo interval trong React?
+### Câu 3. Tại sao cần dùng useEffect khi tạo interval trong React?
 
 Để chỉ khởi tạo interval một lần sau khi component được render lần đầu, tránh tạo nhiều interval trùng lặp mỗi lần re-render.
 
-### 4. Điều gì xảy ra nếu không xóa interval khi component unmount?
+### Câu 4. Điều gì xảy ra nếu không xóa interval khi component unmount?
 
 Interval vẫn chạy trong nền → gây rò rỉ bộ nhớ, cập nhật state của component đã bị gỡ bỏ → có thể sinh ra lỗi.
 

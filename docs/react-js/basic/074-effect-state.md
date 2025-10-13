@@ -83,26 +83,26 @@ function App() {
 
 ---
 
-### 1. Có nên cập nhật state bên trong useEffect không?
+### Câu 1. Có nên cập nhật state bên trong useEffect không?
 
 Nhìn chung, bạn được khuyến khích không nên cập nhật state từ bên trong useEffect. Việc này có thể dẫn đến những lỗi không mong muốn, đặc biệt là vòng lặp vô hạn.
 
-### 2. Lỗi phổ biến nhất khi cập nhật state trong useEffect là gì?
+### Câu 2. Lỗi phổ biến nhất khi cập nhật state trong useEffect là gì?
 
 Lỗi phổ biến nhất là tạo ra một vòng lặp vô hạn. Điều này xảy ra khi bạn gọi setCount() (hoặc bất kỳ hàm cập nhật state nào) bên trong useEffect mà không có một dependency array phù hợp. Khi setCount() được gọi, nó sẽ render lại component, dẫn đến việc useEffect chạy lại, gọi lại setCount(), và cứ thế tiếp diễn.
 
-### 3. Tại sao việc gọi setCount() trong useEffect mà không có dependency array lại tạo ra vòng lặp vô hạn?
+### Câu 3. Tại sao việc gọi setCount() trong useEffect mà không có dependency array lại tạo ra vòng lặp vô hạn?
 
 Khi setCount() được gọi với một giá trị mới, nó sẽ khiến component hiển thị lại. Việc này dẫn đến việc component App được gọi lại, và do đó, effect cũng sẽ chạy lại. Kết quả là setCount() được gọi lại và cứ tiếp tục như vậy, tạo thành một vòng lặp vô hạn.
 
-### 4. Làm thế nào để khắc phục lỗi vòng lặp vô hạn khi cần cập nhật state trong useEffect?
+### Câu 4. Làm thế nào để khắc phục lỗi vòng lặp vô hạn khi cần cập nhật state trong useEffect?
 
 Cách khắc phục phụ thuộc vào mục đích của component. Phương pháp chính là truyền một mảng phụ thuộc (dependency array) cho useEffect. Điều này sẽ giới hạn effect chỉ chạy trong một số điều kiện cụ thể (khi các giá trị trong mảng phụ thuộc thay đổi) hoặc chỉ chạy một lần (nếu mảng phụ thuộc rỗng - []).
 
-### 5. Nếu trạng thái mới có thể được tính toán từ trạng thái hiện tại, có cần tạo biến trạng thái mới không?
+### Câu 5. Nếu trạng thái mới có thể được tính toán từ trạng thái hiện tại, có cần tạo biến trạng thái mới không?
 
 Không, nếu trạng thái mới có thể được tính toán từ trạng thái hiện tại, bạn không cần tạo một biến trạng thái mới. Thay vào đó, bạn chỉ cần tạo một biến được tính toán trực tiếp từ biến trạng thái ban đầu. Điều này giúp tránh việc cập nhật state không cần thiết trong useEffect và giữ cho code đơn giản hơn.
 
-### 6. Việc truyền một mảng phụ thuộc (dependency array) cho useEffect có ý nghĩa gì?
+### Câu 6. Việc truyền một mảng phụ thuộc (dependency array) cho useEffect có ý nghĩa gì?
 
 Việc truyền một mảng phụ thuộc cho useEffect có nghĩa là bạn đang chỉ định các giá trị mà khi chúng thay đổi, useEffect sẽ được thực thi lại. Nếu mảng phụ thuộc rỗng ([]), effect sẽ chỉ chạy một lần sau lần render đầu tiên của component. Nếu mảng phụ thuộc chứa các biến, effect sẽ chạy lại mỗi khi bất kỳ biến nào trong mảng đó thay đổi giá trị. Điều này giúp kiểm soát chặt chẽ việc thực thi của effect và ngăn chặn các vấn đề như vòng lặp vô hạn.

@@ -99,24 +99,24 @@ Hiệu ứng mà bạn lên lịch với `useEffect` sẽ chạy sau khi compone
 
 ---
 
-### 1. localStorage là gì?
+### Câu 1. localStorage là gì?
 
 localStorage là một API của trình duyệt cho phép lưu trữ dữ liệu dưới dạng các cặp khóa – giá trị, dữ liệu được lưu lại ngay cả khi reload hoặc đóng trình duyệt.
 
-### 2. localStorage là API đồng bộ hay bất đồng bộ?
+### Câu 2. localStorage là API đồng bộ hay bất đồng bộ?
 
 Đồng bộ (synchronous) — nghĩa là các lệnh phía sau phải đợi localStorage hoàn thành trước khi được thực thi.
 
-### 3. Vấn đề hiệu suất của việc gọi localStorage trực tiếp trong quá trình render là gì?
+### Câu 3. Vấn đề hiệu suất của việc gọi localStorage trực tiếp trong quá trình render là gì?
 
 Nó có thể làm chậm quá trình render UI, khiến người dùng phải chờ lâu hơn để thấy nội dung trên màn hình.
 
-### 4. Tại sao nên gọi localStorage bên trong useEffect?
+### Câu 4. Tại sao nên gọi localStorage bên trong useEffect?
 
 Vì đây là hiệu ứng phụ (side effect), thay đổi dữ liệu bên ngoài React component.
 
 Để tránh chặn quá trình render — useEffect chạy sau khi DOM đã được cập nhật, giúp UI hiển thị nhanh hơn.
 
-### 5. Điều gì xảy ra nếu gọi localStorage.setItem() trực tiếp trong phần thân component?
+### Câu 5. Điều gì xảy ra nếu gọi localStorage.setItem() trực tiếp trong phần thân component?
 
 Nó sẽ chạy mỗi lần render, làm chậm UI nếu dữ liệu lớn hoặc gọi nhiều lần liên tiếp.
