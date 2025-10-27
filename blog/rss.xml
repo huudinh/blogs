@@ -4,10 +4,86 @@
         <title>Frontend Developer Blogs Blog</title>
         <link>https://huudinh.github.io/blogs/blog</link>
         <description>Frontend Developer Blogs Blog</description>
-        <lastBuildDate>Thu, 16 Oct 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Oct 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>vi</language>
+        <item>
+            <title><![CDATA[Tối ưu seo Crawl dữ liệu với Lite Speed và Robot.txt trong wordpress]]></title>
+            <link>https://huudinh.github.io/blogs/blog/toi-uu-seo-crawl-litespeed</link>
+            <guid>https://huudinh.github.io/blogs/blog/toi-uu-seo-crawl-litespeed</guid>
+            <pubDate>Mon, 27 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Nếu mục tiêu của bạn là giảm crawl CSS/JS để tối ưu tốc độ tải trang và giảm tải cho bot (Googlebot, Bingbot...), LiteSpeed Cache cung cấp nhiều tính năng mạnh mẽ để kiểm soát cách các tài nguyên tĩnh như CSS và JS được xử lý.]]></description>
+            <content:encoded><![CDATA[<p>Nếu mục tiêu của bạn là <strong>giảm crawl CSS/JS</strong> để tối ưu tốc độ tải trang và giảm tải cho bot (Googlebot, Bingbot...), <strong>LiteSpeed Cache</strong> cung cấp nhiều tính năng mạnh mẽ để kiểm soát cách các tài nguyên tĩnh như CSS và JS được xử lý.</p>
+<hr>
+<p>Dưới đây là các cách <strong>tối ưu LiteSpeed Cache để giảm crawl CSS/JS</strong>:</p>
+<p><img decoding="async" loading="lazy" src="https://image.prntscr.com/image/8ceYJLFvTXebqVxHzdxmIQ.png" alt="Create-HTML-1" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="i-kích-hoạt-combine-và-minify">I. Kích hoạt Combine và Minify<a href="https://huudinh.github.io/blogs/blog/toi-uu-seo-crawl-litespeed#i-k%C3%ADch-ho%E1%BA%A1t-combine-v%C3%A0-minify" class="hash-link" aria-label="Đường dẫn trực tiếp đến I. Kích hoạt Combine và Minify" title="Đường dẫn trực tiếp đến I. Kích hoạt Combine và Minify" translate="no">​</a></h3>
+<p>Giúp giảm số lượng request và dung lượng file:</p>
+<ul>
+<li class="">
+<p><strong>LiteSpeed Cache &gt; Page Optimization &gt; CSS Settings</strong></p>
+<ul>
+<li class="">✅ <em>CSS Minify</em>: Bật</li>
+<li class="">✅ <em>CSS Combine</em>: Bật</li>
+<li class="">✅ <em>CSS Combine External and Inline</em>: Bật nếu không gây lỗi</li>
+</ul>
+</li>
+<li class="">
+<p><strong>LiteSpeed Cache &gt; Page Optimization &gt; JS Settings</strong></p>
+<ul>
+<li class="">✅ <em>JS Minify</em>: Bật</li>
+<li class="">✅ <em>JS Combine</em>: Bật</li>
+<li class="">✅ <em>JS Combine External and Inline</em>: Bật nếu không gây lỗi</li>
+</ul>
+</li>
+</ul>
+<p>📌 <em>Lưu ý</em>: Sau khi bật, kiểm tra kỹ giao diện vì một số theme/plugin có thể bị lỗi khi combine.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ii-tải-cssjs-theo-yêu-cầu-lazy-load">II. Tải CSS/JS theo yêu cầu (Lazy Load)<a href="https://huudinh.github.io/blogs/blog/toi-uu-seo-crawl-litespeed#ii-t%E1%BA%A3i-cssjs-theo-y%C3%AAu-c%E1%BA%A7u-lazy-load" class="hash-link" aria-label="Đường dẫn trực tiếp đến II. Tải CSS/JS theo yêu cầu (Lazy Load)" title="Đường dẫn trực tiếp đến II. Tải CSS/JS theo yêu cầu (Lazy Load)" translate="no">​</a></h3>
+<p>Giúp trì hoãn tải các file không cần thiết ngay lập tức:</p>
+<ul>
+<li class=""><strong>Load CSS Asynchronously</strong>: Bật</li>
+<li class=""><strong>JS Deferred</strong>: Bật</li>
+<li class=""><strong>JS Deferred Excludes</strong>: Thêm các script quan trọng không nên trì hoãn (như jQuery nếu cần)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="iii-loại-trừ-cssjs-không-cần-thiết-khỏi-bot-crawl">III. Loại trừ CSS/JS không cần thiết khỏi bot crawl<a href="https://huudinh.github.io/blogs/blog/toi-uu-seo-crawl-litespeed#iii-lo%E1%BA%A1i-tr%E1%BB%AB-cssjs-kh%C3%B4ng-c%E1%BA%A7n-thi%E1%BA%BFt-kh%E1%BB%8Fi-bot-crawl" class="hash-link" aria-label="Đường dẫn trực tiếp đến III. Loại trừ CSS/JS không cần thiết khỏi bot crawl" title="Đường dẫn trực tiếp đến III. Loại trừ CSS/JS không cần thiết khỏi bot crawl" translate="no">​</a></h3>
+<p>LiteSpeed hỗ trợ <strong>tối ưu riêng cho bot</strong>:</p>
+<ul>
+<li class=""><strong>LiteSpeed Cache &gt; Crawler &gt; Optimization Settings</strong>
+<ul>
+<li class="">✅ <em>Separate View for Bots</em>: Bật</li>
+<li class="">✅ <em>Remove Unused CSS for Bots</em>: Bật</li>
+<li class="">✅ <em>Remove JS for Bots</em>: Bật (nếu site không cần JS để hiển thị nội dung chính)</li>
+</ul>
+</li>
+</ul>
+<p>Điều này giúp giảm crawl budget và tăng tốc độ index.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="iv-loại-trừ-file-không-cần-thiết">IV. Loại trừ file không cần thiết<a href="https://huudinh.github.io/blogs/blog/toi-uu-seo-crawl-litespeed#iv-lo%E1%BA%A1i-tr%E1%BB%AB-file-kh%C3%B4ng-c%E1%BA%A7n-thi%E1%BA%BFt" class="hash-link" aria-label="Đường dẫn trực tiếp đến IV. Loại trừ file không cần thiết" title="Đường dẫn trực tiếp đến IV. Loại trừ file không cần thiết" translate="no">​</a></h3>
+<p>Nếu bạn biết rõ file nào không cần thiết, có thể loại trừ:</p>
+<ul>
+<li class=""><strong>LiteSpeed Cache &gt; Page Optimization &gt; Tuning</strong>
+<ul>
+<li class=""><em>JS Excludes</em> / <em>CSS Excludes</em>: thêm đường dẫn hoặc từ khóa file bạn muốn loại trừ khỏi combine/minify</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="iv-tối-ưu-file-robottxt">IV. Tối ưu file Robot.txt<a href="https://huudinh.github.io/blogs/blog/toi-uu-seo-crawl-litespeed#iv-t%E1%BB%91i-%C6%B0u-file-robottxt" class="hash-link" aria-label="Đường dẫn trực tiếp đến IV. Tối ưu file Robot.txt" title="Đường dẫn trực tiếp đến IV. Tối ưu file Robot.txt" translate="no">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># ============================</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># ROBOTS.TXT  Phien ban an toan</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># ============================</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Cho phep tat ca bot index website</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">User-agent: *</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /wp-admin/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /wp-admin/admin-ajax.php</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Chan cac thu muc he thong WordPress khong can SEO</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /cgi-bin/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /trackback/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /xmlrpc.php</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /feed/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /comments/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /wp-json/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /readme.html</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /license.txt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Chan cac file dong &amp; tham so tao duplicate content</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /*.php$</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /*?s=*</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /*?replytocom=*</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: *?utm_*</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: *?p=*</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /tag/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /component/*</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /cdn-cgi/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /?__hstc=</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /?gclid*</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Cho phep Googlebot load CSS, JS, Uploads de render trang</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /wp-content/themes/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /wp-content/plugins/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /wp-content/uploads/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Chan file map, test, docs khong lien quan SEO</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /*.map$</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /wp-content/plugins/*/tests/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /wp-content/plugins/*/docs/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /wp-content/themes/*/docs/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Sitemap chuan</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Sitemap: https://domain-name/sitemap_index.xml</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="v-kiểm-tra-bằng-công-cụ-crawl">V. Kiểm tra bằng công cụ crawl<a href="https://huudinh.github.io/blogs/blog/toi-uu-seo-crawl-litespeed#v-ki%E1%BB%83m-tra-b%E1%BA%B1ng-c%C3%B4ng-c%E1%BB%A5-crawl" class="hash-link" aria-label="Đường dẫn trực tiếp đến V. Kiểm tra bằng công cụ crawl" title="Đường dẫn trực tiếp đến V. Kiểm tra bằng công cụ crawl" translate="no">​</a></h3>
+<p>Dùng các công cụ như:</p>
+<ul>
+<li class=""><a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer" class="">Google Search Console &gt; Crawl Stats</a></li>
+<li class=""><a href="https://www.screamingfrog.co.uk/seo-spider/" target="_blank" rel="noopener noreferrer" class="">Screaming Frog SEO Spider</a></li>
+</ul>
+<p>Để xem bot đang crawl những file nào nhiều nhất, từ đó loại trừ hoặc tối ưu thêm.</p>
+<hr>]]></content:encoded>
+            <category>blog</category>
+        </item>
         <item>
             <title><![CDATA[Tạo ảnh với AI]]></title>
             <link>https://huudinh.github.io/blogs/blog/tao-anh-ai</link>
