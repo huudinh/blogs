@@ -288,7 +288,7 @@ Việc tuân thủ quy tắc này mang lại <strong>ba lợi ích đồng thờ
             <content:encoded><![CDATA[<p>Nếu mục tiêu của bạn là <strong>giảm crawl CSS/JS</strong> để tối ưu tốc độ tải trang và giảm tải cho bot (Googlebot, Bingbot...), <strong>LiteSpeed Cache</strong> cung cấp nhiều tính năng mạnh mẽ để kiểm soát cách các tài nguyên tĩnh như CSS và JS được xử lý.</p>
 <hr>
 <p>Dưới đây là các cách <strong>tối ưu LiteSpeed Cache để giảm crawl CSS/JS</strong>:</p>
-<p><img decoding="async" loading="lazy" src="https://image.prntscr.com/image/8ceYJLFvTXebqVxHzdxmIQ.png" alt="Create-HTML-1" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Create-HTML-1" src="https://huudinh.github.io/blogs/assets/images/2025-10-27-toi-uu-seo-crawl-litespeed-525890555639ac7916e1df22ab5acd0b.png" width="466" height="381" class="img_ev3q"></p>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="i-kích-hoạt-combine-và-minify">I. Kích hoạt Combine và Minify<a href="https://huudinh.github.io/blogs/blog/toi-uu-seo-crawl-litespeed#i-k%C3%ADch-ho%E1%BA%A1t-combine-v%C3%A0-minify" class="hash-link" aria-label="Đường dẫn trực tiếp đến I. Kích hoạt Combine và Minify" title="Đường dẫn trực tiếp đến I. Kích hoạt Combine và Minify" translate="no">​</a></h3>
 <p>Giúp giảm số lượng request và dung lượng file:</p>
