@@ -6,6 +6,8 @@ sidebar_position: 3
 
 Áp dụng kiến thức về Hooks UseState() để Validate trường User, Password, hiển thị thông báo lỗi bằng Modal
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1KFJ33dugIo?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <ToggleTOC />
 
 ## I. Mục tiêu

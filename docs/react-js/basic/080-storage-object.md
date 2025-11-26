@@ -52,6 +52,8 @@ console.log(person); // {id: 1, name: "Sam"}
 - `JSON.stringify(object)` sẽ chuyển đổi một đối tượng/mảng thành chuỗi.
 :::
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/THzeHYM04YQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## FAQ - Câu hỏi thường gặp khi phỏng vấn
 
 ---

@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -60,11 +60,7 @@ const config = {
         docs: {
           routeBasePath: '/docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          // sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: undefined, // Ẩn nút "Sửa trang này"
         },
         blog: {
           showReadingTime: true,
@@ -72,10 +68,8 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Ẩn nút "Sửa trang này" trong blog
+          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -94,7 +88,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Dinh Trieu',
+        title: 'SCI Blogs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -104,7 +98,13 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'reactJsSidebar',
             position: 'left',
-            label: 'React JS',
+            label: 'React',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'nextjsSidebar',
+            position: 'left',
+            label: 'NextJS',
           },
           {
             type: 'docSidebar',
@@ -112,7 +112,7 @@ const config = {
             position: 'left',
             label: 'React Native',
           },
-          {to: '/blog', label: 'Blogs', position: 'left'},
+          { to: '/blog', label: 'Blogs', position: 'left' },
           {
             href: 'https://github.com/huudinh',
             label: 'GitHub',

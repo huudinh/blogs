@@ -95,6 +95,8 @@ Bằng cách đóng gói các cuộc gọi `localStorage` bằng `useEffect`, ch
 Hiệu ứng mà bạn lên lịch với `useEffect` sẽ chạy sau khi component được hiển thị trên DOM.
 :::
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lo-tdnXb4WM?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## FAQ - Câu hỏi thường gặp khi phỏng vấn
 
 ---

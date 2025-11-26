@@ -2,7 +2,7 @@
 sidebar_position: 68
 ---
 
-# Effect More
+# Tại sao nên dùng Effect
 
 Bạn có thể đang tự hỏi, tại sao chúng ta cần sử dụng hook useEffect? Tại sao chúng ta không gọi document.title = "..." ở bất kỳ chỗ nào trong câu lệnh component trước câu lệnh return?
 

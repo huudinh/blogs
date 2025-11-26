@@ -1,5 +1,5 @@
 ---
-sidebar_position: 80
+sidebar_position: 81
 ---
 
 # Khôi phục State từ localStorage
@@ -8,12 +8,11 @@ Có nghĩa là giá trị khởi tạo mà ta cung cấp cho `useState` sẽ đ�
 
 Điều này cho phép bạn lưu trữ thiết lập cho chế độ tối, nếu người dùng chọn chế độ tối và quay trở lại trang web trong tương lai, trang sẽ vẫn ở chế độ tối vì chúng ta đã lưu trữ giá trị đó trong localStorage.
 
+Chúng ta sẽ cùng tìm hiểu cách đọc giá trị được lưu trữ trong localStorage, cách làm có chút khác biệt tùy thuộc vào kiểu dữ liệu được lưu trữ.
+
 ![Create-HTML-1](images/localStorage.png) 
 
 <ToggleTOC />
-
-Chúng ta sẽ cùng tìm hiểu cách đọc giá trị được lưu trữ trong localStorage, cách làm có chút khác biệt tùy thuộc vào kiểu dữ liệu được lưu trữ.
-
 
 ## I. Chuỗi
 
@@ -59,7 +58,7 @@ Bằng cách so sánh với chuỗi `"true"`, bạn đang chuyển đổi giá t
 
 Khi bạn đọc một khóa chưa được lưu trữ trong localStorage, kết quả sẽ trả về giá trị `null`.
 
-Bạn có thể đặt giá trị mặc định cho biến theo nhiều cách như câu lệnh if, toán tử ba ngôi hoặc toán tử 3 ngôi (??). 
+Bạn có thể đặt giá trị mặc định cho biến theo nhiều cách như câu lệnh if, toán tử ba ngôi hoặc toán tử `??`. 
 
 Dưới đây là một số ví dụ gán giá trị mặc định là mảng rỗng:
 
@@ -84,6 +83,8 @@ Chúng ta cần đặt giá trị mặc định cho mảng nếu mong đợi loc
 - Đối với số, chúng ta cần chuyển đổi từ chuỗi sang số bằng cách sử dụng `Number.parseInt ("string", 10)`
 - Đối với giá trị `boolean`, chúng ta cần so sánh với chuỗi `"true"` để  chuyển đổi thành giá trị boolean tương ứng.
 :::
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Nn72odZC7pM?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## FAQ - Câu hỏi thường gặp khi phỏng vấn
 

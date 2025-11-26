@@ -60,9 +60,7 @@ age = Number.parseInt(age, 10); // 20 (number)
 Điều tương tự áp dụng cho giá trị boolean vì giá trị boolean `true` hoặc `false` sẽ được lưu trữ dưới dạng chuỗi tương ứng, `"true"` hoặc `"false"`.
 
 ```js
-let age = localStorage.getItem("age");
-console.log(age); // "20" (string)
-age = Number.parseInt(age, 10); // 20 (number)
+localStorage.setItem("isVerified", true); // thực tế lưu là "true"
 ```
 
 Khi bạn đọc giá trị, giá trị trả về sẽ là `"true"`, do đó cách đơn giản nhất để chuyển đổi chuỗi trở lại thành giá trị boolean là so sánh với chuỗi `"true"`:
@@ -102,6 +100,8 @@ Mỗi khi trạng thái `random` thay đổi, hiệu ứng sẽ chạy, từ đ�
 
 :::
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0QqEffxTOMo?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## FAQ - Câu hỏi thường gặp khi phỏng vấn
 
 ---
@@ -114,7 +114,7 @@ Tất cả khóa và giá trị đều được lưu dưới dạng chuỗi (str
 
 Khi cần lưu dữ liệu quá lớn, hoặc khi phải đọc/ghi liên tục với tần suất cao (có thể làm chậm hiệu suất).
 
-### Câu . Ưu điểm của localStorage là gì?
+### Câu 3. Ưu điểm của localStorage là gì?
 
 Dễ dùng, dữ liệu bền vững (không mất khi reload trang), hỗ trợ trên hầu hết các trình duyệt.
 

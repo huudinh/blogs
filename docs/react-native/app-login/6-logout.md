@@ -6,6 +6,8 @@ sidebar_position: 6
 
 Ta cần lưu dữ liệu đăng nhập vào biến toàn cục và khi Logout thì ta xóa dữ liệu đăng nhập đi và chuyển hướng đến màn hìn Login
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f1GZ6Ifo_SU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <ToggleTOC />
 
 ## I. Mục tiêu

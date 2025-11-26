@@ -6,6 +6,8 @@ sidebar_position: 4
 
 Bạn có thể tạo API đơn giản cho ứng dụng với các chức năng CRUD bằng NextJS và Typescript
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pvImOVzH2sY?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <ToggleTOC />
 
 ## I. Mục tiêu
@@ -148,3 +150,13 @@ Không phù hợp cho các hệ thống backend phức tạp
 Khó mở rộng nếu backend phát triển mạnh
 
 Không có middleware mạnh như Express/NestJS
+
+### 4. Tại sao khi dùng nextjs làm api ta nên kết hợp Next.js + TypeScript
+
+Next.js hỗ trợ cả JavaScript và TypeScript, nhưng TypeScript bổ sung “kiểm tra kiểu tĩnh” (static typing) cho JS — giúp bạn phát hiện lỗi trước khi chạy code.
+
+API cần độ tin cậy cao, khi bạn viết API trong /pages/api/..., bạn đang định nghĩa giao tiếp giữa client và server. Sai kiểu dữ liệu → bug rất khó dò.
+
+Khi bạn có nhiều API (users, orders, products…), việc định nghĩa type/interface giúp bạn tái sử dụng và giữ đồng nhất dữ liệu.
+
+Auto-complete, debug dễ
