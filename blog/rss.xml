@@ -4,10 +4,90 @@
         <title>Frontend Developer Blogs Blog</title>
         <link>https://huudinh.github.io/blogs/blog</link>
         <description>Frontend Developer Blogs Blog</description>
-        <lastBuildDate>Tue, 11 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Nov 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>vi</language>
+        <item>
+            <title><![CDATA[Antigravity so với VS Code]]></title>
+            <link>https://huudinh.github.io/blogs/blog/antigravity-so-voi-vscode</link>
+            <guid>https://huudinh.github.io/blogs/blog/antigravity-so-voi-vscode</guid>
+            <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Antigravity của Google là một nền tảng phát triển ưu tiên tác nhân (agent-first) được xây dựng dựa trên mã nguồn mở của VS Code, nhưng tập trung vào việc tự động hóa toàn bộ quy trình phát triển phần mềm bằng AI thay vì chỉ hỗ trợ viết mã như VS Code truyền thống.]]></description>
+            <content:encoded><![CDATA[<p><strong>Antigravity</strong> của Google là một nền tảng phát triển ưu tiên tác nhân (agent-first) được xây dựng dựa trên mã nguồn mở của VS Code, nhưng tập trung vào việc tự động hóa toàn bộ quy trình phát triển phần mềm bằng AI thay vì chỉ hỗ trợ viết mã như VS Code truyền thống.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="các-điểm-khác-biệt-chính-giữa-antigravity-và-vs-code">Các điểm khác biệt chính giữa Antigravity và VS Code<a href="https://huudinh.github.io/blogs/blog/antigravity-so-voi-vscode#c%C3%A1c-%C4%91i%E1%BB%83m-kh%C3%A1c-bi%E1%BB%87t-ch%C3%ADnh-gi%E1%BB%AFa-antigravity-v%C3%A0-vs-code" class="hash-link" aria-label="Đường dẫn trực tiếp đến Các điểm khác biệt chính giữa Antigravity và VS Code" title="Đường dẫn trực tiếp đến Các điểm khác biệt chính giữa Antigravity và VS Code" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-mô-hình-hoạt-động">1. Mô hình hoạt động<a href="https://huudinh.github.io/blogs/blog/antigravity-so-voi-vscode#1-m%C3%B4-h%C3%ACnh-ho%E1%BA%A1t-%C4%91%E1%BB%99ng" class="hash-link" aria-label="Đường dẫn trực tiếp đến 1. Mô hình hoạt động" title="Đường dẫn trực tiếp đến 1. Mô hình hoạt động" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>VS Code</strong>: Là trình chỉnh sửa mã nguồn truyền thống, nơi người lập trình viết mã và sử dụng các tiện ích mở rộng để nhận gợi ý hoặc hoàn thành mã.</li>
+<li class=""><strong>Antigravity</strong>: Là một nền tảng phát triển tích hợp ưu tiên các tác nhân AI. Người lập trình đưa ra các mục tiêu cấp cao bằng ngôn ngữ tự nhiên, và các tác nhân AI tự lập kế hoạch, viết mã, chạy thử nghiệm và sửa lỗi.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-giao-diện-người-dùng">2. Giao diện người dùng<a href="https://huudinh.github.io/blogs/blog/antigravity-so-voi-vscode#2-giao-di%E1%BB%87n-ng%C6%B0%E1%BB%9Di-d%C3%B9ng" class="hash-link" aria-label="Đường dẫn trực tiếp đến 2. Giao diện người dùng" title="Đường dẫn trực tiếp đến 2. Giao diện người dùng" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>VS Code</strong>: Có giao diện tập trung vào trình chỉnh sửa mã, cây thư mục và bảng điều khiển terminal.</li>
+<li class=""><strong>Antigravity</strong>: Chia giao diện thành hai phần:<!-- -->
+<ul>
+<li class="">Trình chỉnh sửa tương tự VS Code</li>
+<li class="">Trình quản lý tác nhân - cho phép người dùng theo dõi và điều phối nhiều tác nhân AI thực hiện các nhiệm vụ khác nhau.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-khả-năng-tự-động-hóa-và-lập-kế-hoạch">3. Khả năng tự động hóa và lập kế hoạch<a href="https://huudinh.github.io/blogs/blog/antigravity-so-voi-vscode#3-kh%E1%BA%A3-n%C4%83ng-t%E1%BB%B1-%C4%91%E1%BB%99ng-h%C3%B3a-v%C3%A0-l%E1%BA%ADp-k%E1%BA%BF-ho%E1%BA%A1ch" class="hash-link" aria-label="Đường dẫn trực tiếp đến 3. Khả năng tự động hóa và lập kế hoạch" title="Đường dẫn trực tiếp đến 3. Khả năng tự động hóa và lập kế hoạch" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>VS Code</strong>: Cung cấp các gợi ý tức thời.</li>
+<li class=""><strong>Antigravity</strong>: Có thể tạo ra "Kế hoạch thực thi" và "Hiện vật" để minh bạch hóa quá trình làm việc của AI, cho phép người lập trình đánh giá và xác thực công việc của tác nhân.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-tích-hợp-trình-duyệt">4. Tích hợp trình duyệt<a href="https://huudinh.github.io/blogs/blog/antigravity-so-voi-vscode#4-t%C3%ADch-h%E1%BB%A3p-tr%C3%ACnh-duy%E1%BB%87t" class="hash-link" aria-label="Đường dẫn trực tiếp đến 4. Tích hợp trình duyệt" title="Đường dẫn trực tiếp đến 4. Tích hợp trình duyệt" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Antigravity</strong>: Tích hợp trình duyệt Chrome cho phép các tác nhân AI kiểm tra giao diện người dùng và chức năng của ứng dụng web.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-mô-hình-ai-cốt-lõi">5. Mô hình AI cốt lõi<a href="https://huudinh.github.io/blogs/blog/antigravity-so-voi-vscode#5-m%C3%B4-h%C3%ACnh-ai-c%E1%BB%91t-l%C3%B5i" class="hash-link" aria-label="Đường dẫn trực tiếp đến 5. Mô hình AI cốt lõi" title="Đường dẫn trực tiếp đến 5. Mô hình AI cốt lõi" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>VS Code</strong>: Sử dụng các mô hình AI thông qua tiện ích mở rộng.</li>
+<li class=""><strong>Antigravity</strong>: Tận dụng các mô hình ngôn ngữ lớn của Google và các mô hình khác, cho phép truy cập đa mô hình tích hợp.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tóm-lại">Tóm lại<a href="https://huudinh.github.io/blogs/blog/antigravity-so-voi-vscode#t%C3%B3m-l%E1%BA%A1i" class="hash-link" aria-label="Đường dẫn trực tiếp đến Tóm lại" title="Đường dẫn trực tiếp đến Tóm lại" translate="no">​</a></h2>
+<p><strong>VS Code</strong> là công cụ để người lập trình tự viết mã với sự hỗ trợ của AI, còn <strong>Antigravity</strong> là nền tảng mà người lập trình giao nhiệm vụ cho các tác nhân AI tự trị để xây dựng và thử nghiệm phần mềm.</p>]]></content:encoded>
+            <category>blog</category>
+        </item>
+        <item>
+            <title><![CDATA[VPI trong LiteSpeed là gì?]]></title>
+            <link>https://huudinh.github.io/blogs/blog/vpi-trong-litespeed</link>
+            <guid>https://huudinh.github.io/blogs/blog/vpi-trong-litespeed</guid>
+            <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Đây là một dịch vụ của LiteSpeed/QUIC.cloud giúp cải thiện trải nghiệm tải ảnh khi bật Lazy Load, đặc biệt với các ảnh above-the-fold (ảnh hiển thị ngay khi mở trang).]]></description>
+            <content:encoded><![CDATA[<p>Đây là một dịch vụ của LiteSpeed/QUIC.cloud giúp cải thiện trải nghiệm tải ảnh khi bật Lazy Load, đặc biệt với các ảnh <strong>above-the-fold</strong> (ảnh hiển thị ngay khi mở trang).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="i-viewport-images">I. Viewport Images<a href="https://huudinh.github.io/blogs/blog/vpi-trong-litespeed#i-viewport-images" class="hash-link" aria-label="Đường dẫn trực tiếp đến I. Viewport Images" title="Đường dẫn trực tiếp đến I. Viewport Images" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>VPI (Viewport Images)</strong> là một dịch vụ tối ưu hóa hình ảnh được giới thiệu trong LiteSpeed Cache v5.0.</li>
+<li class="">Nó giải quyết nhược điểm của Lazy Load: khi bật Lazy Load, tất cả ảnh (kể cả ảnh trên màn hình đầu tiên) đều bị trì hoãn tải. Điều này có thể khiến người dùng thấy trang trống hoặc chỉ có khung xám.</li>
+<li class="">VPI sẽ <strong>xác định và ưu tiên tải ngay các ảnh trong vùng hiển thị đầu tiên (viewport)</strong>, trong khi các ảnh khác vẫn Lazy Load như bình thường.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ii-ý-nghĩa-của-files-left-in-queue">II. Ý nghĩa của “files left in queue”<a href="https://huudinh.github.io/blogs/blog/vpi-trong-litespeed#ii-%C3%BD-ngh%C4%A9a-c%E1%BB%A7a-files-left-in-queue" class="hash-link" aria-label="Đường dẫn trực tiếp đến II. Ý nghĩa của “files left in queue”" title="Đường dẫn trực tiếp đến II. Ý nghĩa của “files left in queue”" translate="no">​</a></h3>
+<ul>
+<li class="">Khi bạn bật tính năng VPI trong LiteSpeed Cache, plugin sẽ gửi các yêu cầu đến dịch vụ QUIC.cloud để phân tích và tạo danh sách ảnh cần ưu tiên.</li>
+<li class="">Những yêu cầu này được đưa vào <strong>hàng đợi (queue)</strong> để xử lý.</li>
+<li class="">Thông báo <em>“499 VPI files left in queue”</em> nghĩa là hiện tại còn <strong>499 trang/hình ảnh</strong> đang chờ dịch vụ QUIC.cloud xử lý để tạo dữ liệu VPI.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="iii-khi-nào-bạn-thấy-thông-báo-này">III. Khi nào bạn thấy thông báo này?<a href="https://huudinh.github.io/blogs/blog/vpi-trong-litespeed#iii-khi-n%C3%A0o-b%E1%BA%A1n-th%E1%BA%A5y-th%C3%B4ng-b%C3%A1o-n%C3%A0y" class="hash-link" aria-label="Đường dẫn trực tiếp đến III. Khi nào bạn thấy thông báo này?" title="Đường dẫn trực tiếp đến III. Khi nào bạn thấy thông báo này?" translate="no">​</a></h3>
+<ul>
+<li class="">Sau khi bật <strong>Viewport Images</strong> trong LiteSpeed Cache.</li>
+<li class="">Khi website có nhiều trang hoặc nhiều ảnh cần phân tích.</li>
+<li class="">Nếu cron job hoặc kết nối với QUIC.cloud chưa chạy hết, số lượng file trong queue sẽ hiển thị.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="iv-lợi-ích-của-vpi">IV. Lợi ích của VPI<a href="https://huudinh.github.io/blogs/blog/vpi-trong-litespeed#iv-l%E1%BB%A3i-%C3%ADch-c%E1%BB%A7a-vpi" class="hash-link" aria-label="Đường dẫn trực tiếp đến IV. Lợi ích của VPI" title="Đường dẫn trực tiếp đến IV. Lợi ích của VPI" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Cải thiện tốc độ hiển thị ban đầu (First Contentful Paint, Largest Contentful Paint)</strong>.</li>
+<li class="">Người dùng sẽ thấy ảnh trên màn hình đầu tiên ngay lập tức, không phải chờ Lazy Load.</li>
+<li class="">Giúp tăng điểm hiệu năng trên Google PageSpeed Insights và Core Web Vitals.</li>
+</ul>]]></content:encoded>
+            <category>blog</category>
+        </item>
         <item>
             <title><![CDATA[Ứng dụng trí tuệ nhân tạo trong thời đại AI]]></title>
             <link>https://huudinh.github.io/blogs/blog/ung-dung-tri-tue-nhan-tao</link>
