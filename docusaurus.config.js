@@ -32,7 +32,13 @@ const config = {
   deploymentBranch: 'gh-pages',   // branch để deploy (mặc định là gh-pages)
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  // Markdown configuration
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -94,6 +100,12 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'javascriptSidebar',
+            position: 'left',
+            label: 'JavaScript',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'reactJsSidebar',
