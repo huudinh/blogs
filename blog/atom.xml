@@ -2,11 +2,93 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huudinh.github.io/blogs/blog</id>
     <title>Frontend Developer Blogs Blog</title>
-    <updated>2025-12-23T00:00:00.000Z</updated>
+    <updated>2026-01-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huudinh.github.io/blogs/blog"/>
     <subtitle>Frontend Developer Blogs Blog</subtitle>
     <icon>https://huudinh.github.io/blogs/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[LLMs.txt là gì?]]></title>
+        <id>https://huudinh.github.io/blogs/blog/llms-txt-la-gi</id>
+        <link href="https://huudinh.github.io/blogs/blog/llms-txt-la-gi"/>
+        <updated>2026-01-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LLMs.txt là một tiêu chuẩn mới (giống như robots.txt) dùng để hướng dẫn các mô hình ngôn ngữ lớn (LLMs) như ChatGPT, Copilot… cách thu thập và sử dụng nội dung từ website của bạn. Để tích hợp vào WordPress, bạn chỉ cần tạo file llms.txt trong thư mục gốc của website và khai báo nội dung bạn muốn AI đọc hoặc bỏ qua.]]></summary>
+        <content type="html"><![CDATA[<p>LLMs.txt là một tiêu chuẩn mới (giống như <code>robots.txt</code>) dùng để hướng dẫn các mô hình ngôn ngữ lớn (LLMs) như ChatGPT, Copilot… cách thu thập và sử dụng nội dung từ website của bạn. Để tích hợp vào WordPress, bạn chỉ cần tạo file <code>llms.txt</code> trong thư mục gốc của website và khai báo nội dung bạn muốn AI đọc hoặc bỏ qua.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="i-llmstxt-là-gì">I. LLMs.txt là gì?<a href="https://huudinh.github.io/blogs/blog/llms-txt-la-gi#i-llmstxt-l%C3%A0-g%C3%AC" class="hash-link" aria-label="Đường dẫn trực tiếp đến I. LLMs.txt là gì?" title="Đường dẫn trực tiếp đến I. LLMs.txt là gì?" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Định nghĩa:</strong> Là một file văn bản đặt ở thư mục gốc website, giúp <strong>AI crawler</strong> biết nội dung nào quan trọng, nên ưu tiên, hoặc không được phép sử dụng.</li>
+<li class=""><strong>Tương tự robots.txt:</strong> Nếu robots.txt hướng dẫn công cụ tìm kiếm (Google, Bing), thì llms.txt hướng dẫn <strong>AI/LLMs</strong>.</li>
+<li class=""><strong>Mục đích:</strong>
+<ul>
+<li class="">Giảm tải việc AI phải crawl toàn bộ site.</li>
+<li class="">Cho phép bạn <strong>chọn lọc nội dung</strong> mà AI có thể dùng để trả lời người dùng.</li>
+<li class="">Bảo vệ nội dung nhạy cảm hoặc không muốn AI sử dụng.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ii-cách-tích-hợp-llmstxt-vào-wordpress">II. Cách tích hợp LLMs.txt vào WordPress<a href="https://huudinh.github.io/blogs/blog/llms-txt-la-gi#ii-c%C3%A1ch-t%C3%ADch-h%E1%BB%A3p-llmstxt-v%C3%A0o-wordpress" class="hash-link" aria-label="Đường dẫn trực tiếp đến II. Cách tích hợp LLMs.txt vào WordPress" title="Đường dẫn trực tiếp đến II. Cách tích hợp LLMs.txt vào WordPress" translate="no">​</a></h2>
+<ol>
+<li class="">
+<p><strong>Tạo file llms.txt</strong></p>
+<ul>
+<li class="">Mở trình soạn thảo (Notepad, VS Code).</li>
+<li class="">Viết nội dung theo chuẩn, ví dụ:<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /blog/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /private/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Sitemap: https://example.com/sitemap.xml</span><br></span></code></pre></div></div>
+</li>
+<li class="">Lưu file với tên <code>llms.txt</code>.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Đặt file vào thư mục gốc WordPress</strong></p>
+<ul>
+<li class="">Thư mục gốc thường là nơi chứa <code>wp-config.php</code>.</li>
+<li class="">Upload file <code>llms.txt</code> bằng FTP, cPanel hoặc File Manager.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Kiểm tra truy cập</strong></p>
+<ul>
+<li class="">Truy cập <code>https://yourdomain.com/llms.txt</code> để chắc chắn file hiển thị.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Tùy chỉnh nội dung</strong></p>
+<ul>
+<li class=""><strong>Allow:</strong> Chỉ định thư mục/nội dung mà AI có thể đọc.</li>
+<li class=""><strong>Disallow:</strong> Ngăn AI đọc nội dung.</li>
+<li class=""><strong>Sitemap:</strong> Khai báo sitemap để AI dễ tìm nội dung quan trọng.</li>
+<li class="">Có thể thêm link API, tài liệu, chính sách… để AI hiểu rõ hơn.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="iii-lưu-ý--rủi-ro">III. Lưu ý &amp; Rủi ro<a href="https://huudinh.github.io/blogs/blog/llms-txt-la-gi#iii-l%C6%B0u-%C3%BD--r%E1%BB%A7i-ro" class="hash-link" aria-label="Đường dẫn trực tiếp đến III. Lưu ý &amp; Rủi ro" title="Đường dẫn trực tiếp đến III. Lưu ý &amp; Rủi ro" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Tiêu chuẩn mới:</strong> LLMs.txt chưa được tất cả AI hỗ trợ, nhưng đang dần phổ biến.</li>
+<li class=""><strong>Không thay thế robots.txt:</strong> Bạn vẫn cần robots.txt cho SEO.</li>
+<li class=""><strong>Quyền kiểm soát:</strong> Không đảm bảo 100% rằng mọi AI sẽ tuân thủ, nhưng hầu hết các hệ thống lớn sẽ tôn trọng.</li>
+<li class=""><strong>Nội dung nhạy cảm:</strong> Nếu có dữ liệu riêng tư, tốt nhất là <strong>không public</strong> thay vì chỉ Disallow.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="iv-so-sánh-nhanh">IV. So sánh nhanh<a href="https://huudinh.github.io/blogs/blog/llms-txt-la-gi#iv-so-s%C3%A1nh-nhanh" class="hash-link" aria-label="Đường dẫn trực tiếp đến IV. So sánh nhanh" title="Đường dẫn trực tiếp đến IV. So sánh nhanh" translate="no">​</a></h2>
+<table><thead><tr><th>Tiêu chuẩn</th><th>Đối tượng</th><th>Chức năng chính</th></tr></thead><tbody><tr><td>robots.txt</td><td>Công cụ tìm kiếm (Google, Bing)</td><td>Điều hướng crawl cho SEO</td></tr><tr><td>sitemap.xml</td><td>Công cụ tìm kiếm</td><td>Liệt kê cấu trúc nội dung site</td></tr><tr><td>llms.txt</td><td>AI/LLMs (ChatGPT, Copilot…)</td><td>Điều hướng crawl cho AI, chọn lọc nội dung</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="v-mẫu-file-llmstxt-tối-ưu">V. Mẫu file llms.txt tối ưu<a href="https://huudinh.github.io/blogs/blog/llms-txt-la-gi#v-m%E1%BA%ABu-file-llmstxt-t%E1%BB%91i-%C6%B0u" class="hash-link" aria-label="Đường dẫn trực tiếp đến V. Mẫu file llms.txt tối ưu" title="Đường dẫn trực tiếp đến V. Mẫu file llms.txt tối ưu" translate="no">​</a></h2>
+<p>Đây là một <strong>mẫu file <code>llms.txt</code> tối ưu</strong> cho một website WordPress dạng blog + trang sản phẩm, đồng thời loại bỏ các khu vực quản trị và nội dung riêng tư:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># llms.txt - hướng dẫn cho AI/LLMs khi thu thập dữ liệu từ website WordPress</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Cho phép AI đọc nội dung chính</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /blog/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /products/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /shop/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /category/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Allow: /tag/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Không cho phép AI đọc các khu vực quản trị hoặc riêng tư</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /wp-admin/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /wp-login.php</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /private/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /cart/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /checkout/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /my-account/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Khai báo sitemap để AI dễ tìm nội dung quan trọng</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Sitemap: https://example.com/sitemap.xml</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Thông tin thêm (tùy chọn)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Bạn có thể thêm link tới tài liệu, API hoặc chính sách</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Documentation: https://example.com/docs/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Policy: https://example.com/privacy-policy/</span><br></span></code></pre></div></div>
+<ul>
+<li class=""><strong>Allow:</strong> Chỉ định thư mục/nội dung mà bạn muốn AI ưu tiên (blog, sản phẩm).</li>
+<li class=""><strong>Disallow:</strong> Ngăn AI đọc các trang quản trị, giỏ hàng, checkout, hoặc nội dung riêng tư.</li>
+<li class=""><strong>Sitemap:</strong> Khai báo sitemap để AI dễ dàng tìm toàn bộ cấu trúc nội dung.</li>
+<li class=""><strong>Documentation/Policy:</strong> (tùy chọn) giúp AI hiểu thêm về chính sách hoặc tài liệu liên quan.</li>
+</ul>]]></content>
+        <author>
+            <name>Dinh Trieu</name>
+            <uri>https://thaygiaofrontend.com</uri>
+        </author>
+        <category label="blog" term="blog"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Thần số học và ngôn ngữ lập trình có phải là ngôn ngữ của thần sáng tạo ra từ trước?]]></title>
         <id>https://huudinh.github.io/blogs/blog/than-so-hoc-va-ngon-ngu-lap-trinh</id>
