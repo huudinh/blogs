@@ -4,10 +4,67 @@
         <title>Frontend Developer Blogs Blog</title>
         <link>https://huudinh.github.io/blogs/blog</link>
         <description>Frontend Developer Blogs Blog</description>
-        <lastBuildDate>Wed, 07 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>vi</language>
+        <item>
+            <title><![CDATA[Tracking sự kiện người dùng click vào các phần tử trên Landing Page qua Google Tag Manager]]></title>
+            <link>https://huudinh.github.io/blogs/blog/tracking-su-kien-qua-google-tag-manager</link>
+            <guid>https://huudinh.github.io/blogs/blog/tracking-su-kien-qua-google-tag-manager</guid>
+            <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Có thể cấu hình sự kiện trong gtag dựa trên ID của một phần tử trong trang (ví dụ: Landing page section, button, div…) mà không cần chỉnh sửa trực tiếp code gtag. Cách làm như sau]]></description>
+            <content:encoded><![CDATA[<p>Có thể cấu hình sự kiện trong gtag dựa trên ID của một phần tử trong trang (ví dụ: Landing page section, button, div…) mà không cần chỉnh sửa trực tiếp code gtag. Cách làm như sau</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-tạo-trigger-dựa-trên-id-phần-tử">1. Tạo Trigger dựa trên ID phần tử<a href="https://huudinh.github.io/blogs/blog/tracking-su-kien-qua-google-tag-manager#1-t%E1%BA%A1o-trigger-d%E1%BB%B1a-tr%C3%AAn-id-ph%E1%BA%A7n-t%E1%BB%AD" class="hash-link" aria-label="Đường dẫn trực tiếp đến 1. Tạo Trigger dựa trên ID phần tử" title="Đường dẫn trực tiếp đến 1. Tạo Trigger dựa trên ID phần tử" translate="no">​</a></h3>
+<ul>
+<li class="">Vào <strong>Triggers</strong> → <strong>New</strong>.</li>
+<li class="">Chọn loại trigger: <strong>Click – All Elements</strong> hoặc <strong>Click – Just Links</strong> (tuỳ phần tử).</li>
+<li class="">Trong phần <strong>Trigger Configuration</strong>, chọn:<!-- -->
+<ul>
+<li class=""><strong>Some Clicks</strong>.</li>
+<li class="">Điều kiện: <code>Click ID</code> → <code>equals</code> → <code>landing</code> (giả sử ID phần tử là <code>landing</code>).</li>
+</ul>
+</li>
+<li class="">Lưu trigger.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-tạo-tag-gửi-sự-kiện-về-ga4">2. Tạo Tag gửi sự kiện về GA4<a href="https://huudinh.github.io/blogs/blog/tracking-su-kien-qua-google-tag-manager#2-t%E1%BA%A1o-tag-g%E1%BB%ADi-s%E1%BB%B1-ki%E1%BB%87n-v%E1%BB%81-ga4" class="hash-link" aria-label="Đường dẫn trực tiếp đến 2. Tạo Tag gửi sự kiện về GA4" title="Đường dẫn trực tiếp đến 2. Tạo Tag gửi sự kiện về GA4" translate="no">​</a></h3>
+<ul>
+<li class="">Vào <strong>Tags</strong> → <strong>New</strong>.</li>
+<li class="">Chọn loại tag: <strong>Google Analytics: GA4 Event</strong>.</li>
+<li class="">Nhập:<!-- -->
+<ul>
+<li class=""><strong>Configuration Tag</strong>: chọn GA4 config đã có.</li>
+<li class=""><strong>Event Name</strong>: ví dụ <code>click_landing</code>.</li>
+<li class=""><strong>Event Parameters</strong>: thêm các tham số như:<!-- -->
+<ul>
+<li class=""><code>event_category</code> = <code>CTA</code></li>
+<li class=""><code>event_label</code> = <code>Landing Button</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">Gắn trigger vừa tạo ở bước 1.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-kiểm-tra-bằng-preview-mode">3. Kiểm tra bằng Preview Mode<a href="https://huudinh.github.io/blogs/blog/tracking-su-kien-qua-google-tag-manager#3-ki%E1%BB%83m-tra-b%E1%BA%B1ng-preview-mode" class="hash-link" aria-label="Đường dẫn trực tiếp đến 3. Kiểm tra bằng Preview Mode" title="Đường dẫn trực tiếp đến 3. Kiểm tra bằng Preview Mode" translate="no">​</a></h3>
+<ul>
+<li class="">Bấm <strong>Preview</strong> trong GTM.</li>
+<li class="">Mở Landing page, click vào phần tử có ID <code>landing</code>.</li>
+<li class="">Kiểm tra trong <strong>Tag Assistant</strong> xem tag có được kích hoạt không.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-xác-nhận-trong-ga4">4. Xác nhận trong GA4<a href="https://huudinh.github.io/blogs/blog/tracking-su-kien-qua-google-tag-manager#4-x%C3%A1c-nh%E1%BA%ADn-trong-ga4" class="hash-link" aria-label="Đường dẫn trực tiếp đến 4. Xác nhận trong GA4" title="Đường dẫn trực tiếp đến 4. Xác nhận trong GA4" translate="no">​</a></h3>
+<ul>
+<li class="">Vào <strong>Realtime report</strong> trong GA4.</li>
+<li class="">Thực hiện click thử.</li>
+<li class="">Xem sự kiện <code>click_landing</code> có xuất hiện không.</li>
+</ul>
+<hr>
+<p>👉 Như vậy, bạn không cần viết code thủ công, chỉ cần dùng GTM để bắt sự kiện theo ID phần tử. Nếu Landing page có nhiều nút/section khác nhau, bạn có thể tạo nhiều trigger tương ứng với từng ID.</p>]]></content:encoded>
+            <category>blog</category>
+        </item>
         <item>
             <title><![CDATA[LLMs.txt là gì?]]></title>
             <link>https://huudinh.github.io/blogs/blog/llms-txt-la-gi</link>
