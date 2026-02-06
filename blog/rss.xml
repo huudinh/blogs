@@ -4,10 +4,156 @@
         <title>Frontend Developer Blogs Blog</title>
         <link>https://huudinh.github.io/blogs/blog</link>
         <description>Frontend Developer Blogs Blog</description>
-        <lastBuildDate>Thu, 29 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>vi</language>
+        <item>
+            <title><![CDATA[Làm web trong thời đại AI]]></title>
+            <link>https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai</link>
+            <guid>https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai</guid>
+            <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Tổng quan AI & JavaScript Frameworks trong kỷ nguyên AI, định hướng kiến trúc web trong thời đại AI]]></description>
+            <content:encoded><![CDATA[<p>Tổng quan AI &amp; JavaScript Frameworks trong kỷ nguyên AI, định hướng kiến trúc web trong thời đại AI</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-bối-cảnh-chung">1. Bối cảnh chung<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#1-b%E1%BB%91i-c%E1%BA%A3nh-chung" class="hash-link" aria-label="Đường dẫn trực tiếp đến 1. Bối cảnh chung" title="Đường dẫn trực tiếp đến 1. Bối cảnh chung" translate="no">​</a></h2>
+<p>Trong kỷ nguyên AI (Artificial Intelligence), cách <strong>con người – máy tìm kiếm – AI agent</strong> tiếp cận nội dung web đã thay đổi mạnh mẽ. Web không còn chỉ phục vụ người dùng cuối, mà còn phải phục vụ:</p>
+<ul>
+<li class="">AI chatbot (ChatGPT, Claude, Gemini…)</li>
+<li class="">Search AI (Google SGE, Bing Copilot)</li>
+<li class="">AI Agent tự động đọc – tóm tắt – trích xuất tri thức</li>
+</ul>
+<p>Điều này đặt ra một câu hỏi cốt lõi:</p>
+<blockquote>
+<p><strong>AI đọc và hiểu website bằng cách nào?</strong></p>
+</blockquote>
+<p>Câu trả lời nằm ở <strong>HTML đã render</strong>, không phải JavaScript runtime.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-ai-hiểu-nội-dung-web-như-thế-nào">2. AI hiểu nội dung web như thế nào?<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#2-ai-hi%E1%BB%83u-n%E1%BB%99i-dung-web-nh%C6%B0-th%E1%BA%BF-n%C3%A0o" class="hash-link" aria-label="Đường dẫn trực tiếp đến 2. AI hiểu nội dung web như thế nào?" title="Đường dẫn trực tiếp đến 2. AI hiểu nội dung web như thế nào?" translate="no">​</a></h2>
+<p>AI (và bot nói chung) <strong>không chạy trình duyệt như con người</strong>:</p>
+<ul>
+<li class="">Không click</li>
+<li class="">Không chờ JS fetch API</li>
+<li class="">Không chạy React lifecycle</li>
+</ul>
+<p>AI chỉ hiểu:</p>
+<ul>
+<li class="">HTML có sẵn</li>
+<li class="">Text tĩnh</li>
+<li class="">Structured Data (Schema / JSON-LD)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="công-thức-cốt-lõi">Công thức cốt lõi:<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#c%C3%B4ng-th%E1%BB%A9c-c%E1%BB%91t-l%C3%B5i" class="hash-link" aria-label="Đường dẫn trực tiếp đến Công thức cốt lõi:" title="Đường dẫn trực tiếp đến Công thức cốt lõi:" translate="no">​</a></h4>
+<blockquote>
+<p><strong>AI chỉ hiểu: Nội dung đã được render ra HTML ở thời điểm request</strong></p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-javascript-và-bài-toán-ai-không-thấy-nội-dung">3. JavaScript và bài toán “AI không thấy nội dung”<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#3-javascript-v%C3%A0-b%C3%A0i-to%C3%A1n-ai-kh%C3%B4ng-th%E1%BA%A5y-n%E1%BB%99i-dung" class="hash-link" aria-label="Đường dẫn trực tiếp đến 3. JavaScript và bài toán “AI không thấy nội dung”" title="Đường dẫn trực tiếp đến 3. JavaScript và bài toán “AI không thấy nội dung”" translate="no">​</a></h2>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="javascript-client-side-csr">JavaScript Client-side (CSR)<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#javascript-client-side-csr" class="hash-link" aria-label="Đường dẫn trực tiếp đến JavaScript Client-side (CSR)" title="Đường dẫn trực tiếp đến JavaScript Client-side (CSR)" translate="no">​</a></h4>
+<p>Mô hình phổ biến của React/Vue SPA:</p>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">body</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">div</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">id</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">root</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">script</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">src</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">bundle.js</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token script"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">body</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<p>Nội dung thật chỉ xuất hiện sau khi:</p>
+<ul>
+<li class="">JS load</li>
+<li class="">API trả dữ liệu</li>
+<li class="">Component render</li>
+</ul>
+<p>👉 Với AI: <strong>Trang web = rỗng</strong></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-reactjs--vuejs--mạnh-cho-ui-yếu-cho-ai">4. ReactJS &amp; VueJS – Mạnh cho UI, yếu cho AI<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#4-reactjs--vuejs--m%E1%BA%A1nh-cho-ui-y%E1%BA%BFu-cho-ai" class="hash-link" aria-label="Đường dẫn trực tiếp đến 4. ReactJS &amp; VueJS – Mạnh cho UI, yếu cho AI" title="Đường dẫn trực tiếp đến 4. ReactJS &amp; VueJS – Mạnh cho UI, yếu cho AI" translate="no">​</a></h2>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="reactjs--vuejs-csr">ReactJS / VueJS CSR<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#reactjs--vuejs-csr" class="hash-link" aria-label="Đường dẫn trực tiếp đến ReactJS / VueJS CSR" title="Đường dẫn trực tiếp đến ReactJS / VueJS CSR" translate="no">​</a></h4>
+<p><strong>Ưu điểm</strong>:</p>
+<ul>
+<li class="">UI động</li>
+<li class="">SPA mượt</li>
+<li class="">Phù hợp app nội bộ, dashboard</li>
+</ul>
+<p><strong>Nhược điểm trong kỷ nguyên AI</strong>:</p>
+<ul>
+<li class="">AI không đọc được nội dung</li>
+<li class="">SEO kém</li>
+<li class="">AI Search không hiểu context</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="bảng-tổng-hợp">Bảng tổng hợp<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#b%E1%BA%A3ng-t%E1%BB%95ng-h%E1%BB%A3p" class="hash-link" aria-label="Đường dẫn trực tiếp đến Bảng tổng hợp" title="Đường dẫn trực tiếp đến Bảng tổng hợp" translate="no">​</a></h4>
+<table><thead><tr><th>Tiêu chí</th><th>React/Vue CSR</th></tr></thead><tbody><tr><td>UI</td><td>⭐⭐⭐⭐⭐</td></tr><tr><td>SEO</td><td>❌</td></tr><tr><td>AI hiểu nội dung</td><td>❌</td></tr><tr><td>AI Agent crawl</td><td>❌</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-server-side-rendering-ssr--static-generation-ssg">5. Server-Side Rendering (SSR) &amp; Static Generation (SSG)<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#5-server-side-rendering-ssr--static-generation-ssg" class="hash-link" aria-label="Đường dẫn trực tiếp đến 5. Server-Side Rendering (SSR) &amp; Static Generation (SSG)" title="Đường dẫn trực tiếp đến 5. Server-Side Rendering (SSR) &amp; Static Generation (SSG)" translate="no">​</a></h2>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="nguyên-lý">Nguyên lý<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#nguy%C3%AAn-l%C3%BD" class="hash-link" aria-label="Đường dẫn trực tiếp đến Nguyên lý" title="Đường dẫn trực tiếp đến Nguyên lý" translate="no">​</a></h4>
+<ul>
+<li class="">Nội dung được render <strong>trên server</strong></li>
+<li class="">HTML trả về đã có text</li>
+</ul>
+<p>Ví dụ HTML SSR:</p>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Bài viết về AI</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">p</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Nội dung chi tiết...</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">p</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<p>➡️ AI hiểu ngay lập tức.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-nextjs--vì-sao-là-xu-thế-thời-đại-ai">6. Next.js – Vì sao là xu thế thời đại AI?<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#6-nextjs--v%C3%AC-sao-l%C3%A0-xu-th%E1%BA%BF-th%E1%BB%9Di-%C4%91%E1%BA%A1i-ai" class="hash-link" aria-label="Đường dẫn trực tiếp đến 6. Next.js – Vì sao là xu thế thời đại AI?" title="Đường dẫn trực tiếp đến 6. Next.js – Vì sao là xu thế thời đại AI?" translate="no">​</a></h2>
+<p>Next.js không chỉ là framework frontend, mà là <strong>nền tảng xuất bản nội dung cho AI</strong>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="các-khả-năng-cốt-lõi-của-nextjs">Các khả năng cốt lõi của Next.js<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#c%C3%A1c-kh%E1%BA%A3-n%C4%83ng-c%E1%BB%91t-l%C3%B5i-c%E1%BB%A7a-nextjs" class="hash-link" aria-label="Đường dẫn trực tiếp đến Các khả năng cốt lõi của Next.js" title="Đường dẫn trực tiếp đến Các khả năng cốt lõi của Next.js" translate="no">​</a></h4>
+<ul>
+<li class="">SSR (Server-Side Rendering)</li>
+<li class="">SSG (Static Site Generation)</li>
+<li class="">ISR (Incremental Static Regeneration)</li>
+<li class="">Metadata API</li>
+<li class="">Streaming / Partial Rendering</li>
+</ul>
+<p>→ Next.js &amp; AI – Match hoàn hảo</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-đọc-được-nội-dung">AI đọc được nội dung<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#ai-%C4%91%E1%BB%8Dc-%C4%91%C6%B0%E1%BB%A3c-n%E1%BB%99i-dung" class="hash-link" aria-label="Đường dẫn trực tiếp đến AI đọc được nội dung" title="Đường dẫn trực tiếp đến AI đọc được nội dung" translate="no">​</a></h4>
+<p>Next.js trả về HTML hoàn chỉnh:</p>
+<ul>
+<li class="">AI</li>
+<li class="">Google</li>
+<li class="">Bing</li>
+<li class="">AI Agent</li>
+</ul>
+<p>→ đều hiểu nội dung.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="structured-data-mạnh">Structured Data mạnh<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#structured-data-m%E1%BA%A1nh" class="hash-link" aria-label="Đường dẫn trực tiếp đến Structured Data mạnh" title="Đường dẫn trực tiếp đến Structured Data mạnh" translate="no">​</a></h4>
+<p>Next.js hỗ trợ:</p>
+<ul>
+<li class="">Schema.org</li>
+<li class="">JSON-LD</li>
+<li class="">OpenGraph</li>
+<li class="">Metadata động</li>
+</ul>
+<p>→ AI hiểu ngữ nghĩa, không chỉ text.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="phù-hợp-ai-search--rag">Phù hợp AI Search &amp; RAG<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#ph%C3%B9-h%E1%BB%A3p-ai-search--rag" class="hash-link" aria-label="Đường dẫn trực tiếp đến Phù hợp AI Search &amp; RAG" title="Đường dẫn trực tiếp đến Phù hợp AI Search &amp; RAG" translate="no">​</a></h4>
+<ul>
+<li class="">Nội dung tách bạch</li>
+<li class="">Dễ index</li>
+<li class="">Dễ vector hóa</li>
+</ul>
+<p>→ Tối ưu cho Retrieval-Augmented Generation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="so-sánh-tổng-thể">So sánh tổng thể<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#so-s%C3%A1nh-t%E1%BB%95ng-th%E1%BB%83" class="hash-link" aria-label="Đường dẫn trực tiếp đến So sánh tổng thể" title="Đường dẫn trực tiếp đến So sánh tổng thể" translate="no">​</a></h4>
+<table><thead><tr><th>Công nghệ</th><th>AI hiểu nội dung</th><th>SEO</th><th>Phù hợp AI</th></tr></thead><tbody><tr><td>React CSR</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td>Vue CSR</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td>React + SSR tự build</td><td>⚠️</td><td>⚠️</td><td>⚠️</td></tr><tr><td><strong>Next.js</strong></td><td>✅</td><td>✅</td><td>⭐⭐⭐⭐⭐</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-ai-first-web--tư-duy-mới">7. AI-first Web – Tư duy mới<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#7-ai-first-web--t%C6%B0-duy-m%E1%BB%9Bi" class="hash-link" aria-label="Đường dẫn trực tiếp đến 7. AI-first Web – Tư duy mới" title="Đường dẫn trực tiếp đến 7. AI-first Web – Tư duy mới" translate="no">​</a></h2>
+<p>Trong thời đại AI:</p>
+<blockquote>
+<p><strong>Website không chỉ viết cho người đọc, mà còn cho AI đọc</strong></p>
+</blockquote>
+<p>Điều này dẫn đến:</p>
+<ul>
+<li class="">Nội dung phải rõ ràng</li>
+<li class="">HTML phải đầy đủ</li>
+<li class="">Data phải có cấu trúc</li>
+</ul>
+<p>Next.js đáp ứng trọn vẹn 3 điều này.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="8-kết-luận">8. Kết luận<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#8-k%E1%BA%BFt-lu%E1%BA%ADn" class="hash-link" aria-label="Đường dẫn trực tiếp đến 8. Kết luận" title="Đường dẫn trực tiếp đến 8. Kết luận" translate="no">​</a></h2>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vì-sao-nextjs-là-xu-thế-thời-đại-ai">Vì sao Next.js là xu thế thời đại AI?<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#v%C3%AC-sao-nextjs-l%C3%A0-xu-th%E1%BA%BF-th%E1%BB%9Di-%C4%91%E1%BA%A1i-ai" class="hash-link" aria-label="Đường dẫn trực tiếp đến Vì sao Next.js là xu thế thời đại AI?" title="Đường dẫn trực tiếp đến Vì sao Next.js là xu thế thời đại AI?" translate="no">​</a></h4>
+<ul>
+<li class="">AI đọc được nội dung ngay</li>
+<li class="">SEO + AI Search mạnh</li>
+<li class="">Phù hợp Agent, RAG, Chatbot</li>
+<li class="">Chuẩn kiến trúc hiện đại</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="một-câu-chốt">Một câu chốt:<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#m%E1%BB%99t-c%C3%A2u-ch%E1%BB%91t" class="hash-link" aria-label="Đường dẫn trực tiếp đến Một câu chốt:" title="Đường dẫn trực tiếp đến Một câu chốt:" translate="no">​</a></h4>
+<blockquote>
+<p><strong>React/Vue giải quyết UI, Next.js giải quyết tri thức cho AI</strong></p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="9-gợi-ý-định-hướng">9. Gợi ý định hướng<a href="https://huudinh.github.io/blogs/blog/lam-web-trong-thoi-dai-ai#9-g%E1%BB%A3i-%C3%BD-%C4%91%E1%BB%8Bnh-h%C6%B0%E1%BB%9Bng" class="hash-link" aria-label="Đường dẫn trực tiếp đến 9. Gợi ý định hướng" title="Đường dẫn trực tiếp đến 9. Gợi ý định hướng" translate="no">​</a></h2>
+<ul>
+<li class="">Website nội dung / SEO / AI Search → <strong>Next.js</strong></li>
+<li class="">App nội bộ / dashboard → React/Vue CSR</li>
+<li class="">Website muốn sống lâu trong kỷ nguyên AI → <strong>AI-first + SSR</strong></li>
+</ul>
+<hr>]]></content:encoded>
+            <category>blog</category>
+        </item>
         <item>
             <title><![CDATA[Tracking sự kiện người dùng click vào các phần tử trên Landing Page qua Google Tag Manager]]></title>
             <link>https://huudinh.github.io/blogs/blog/tracking-su-kien-qua-google-tag-manager</link>
