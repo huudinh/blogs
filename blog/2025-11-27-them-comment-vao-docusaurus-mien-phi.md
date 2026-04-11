@@ -7,7 +7,6 @@ tags: [blog]
 
 Trong Docusaurus (một framework để tạo tài liệu và blog), việc **thêm comment** không có sẵn mặc định. Bạn cần tích hợp dịch vụ bình luận bên ngoài. Có vài cách phổ biến:
 
-<!-- truncate -->
 
 ---
 

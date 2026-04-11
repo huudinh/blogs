@@ -6,7 +6,6 @@ sidebar_position: 8
 
 Điều hướng trang (Navigation) trong Next.js liên quan đến việc quản lý các URL của ứng dụng web và điều hướng người dùng đến các trang khác nhau dựa trên yêu cầu của họ. Điều này được thực hiện thông qua một module gọi là Router.
 
-<!-- ![Create-HTML-1](images/state.png) -->
 
 <ToggleTOC />
 

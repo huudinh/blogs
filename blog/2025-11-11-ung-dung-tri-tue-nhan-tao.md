@@ -8,7 +8,6 @@ tags: [blog]
 Ứng dụng chung của Trí tuệ Nhân tạo (AI) trong công việc và đời sống con người.
 
 
-<!-- truncate -->
 ---
 
 ## I. MINDSET — Tư duy thời đại AI

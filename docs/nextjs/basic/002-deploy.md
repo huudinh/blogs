@@ -6,7 +6,6 @@ sidebar_position: 2
 
 Hướng dẫn Deploy ứng dụng NextJS. Vercel là nền tảng do chính đội ngũ tạo ra Next.js phát triển, nên hỗ trợ rất tốt.
 
-<!-- ![Create-HTML-1](images/state.png) -->
 
 <ToggleTOC />
 

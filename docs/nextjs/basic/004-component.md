@@ -6,7 +6,6 @@ sidebar_position: 4
 
 Việc chia tách Server Component và Client Component giúp tối ưu hóa hiệu suất, tăng cường khả năng tương tác và cung cấp một trải nghiệm người dùng mạnh mẽ hơn
 
-<!-- ![Create-HTML-1](images/state.png) -->
 
 <ToggleTOC />
 

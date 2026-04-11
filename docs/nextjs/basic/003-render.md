@@ -6,7 +6,6 @@ sidebar_position: 3
 
 React, Angular, Vue là những framework chuyên làm UI cho client. Tuy nhiên Next.js lại hỗ trợ cả client và server render
 
-<!-- ![Create-HTML-1](images/state.png) -->
 
 <ToggleTOC />
 

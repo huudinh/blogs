@@ -7,8 +7,6 @@ tags: [blog]
 
 Để tích hợp Google Analytics 4 (GA4) vào một website sử dụng Docusaurus, bạn chỉ cần thực hiện vài bước cấu hình đơn giản. Dưới đây là hướng dẫn chi tiết
 
-<!-- truncate -->
-
 ---
 
 ## 1. Tạo tài khoản GA4 và lấy mã đo lường

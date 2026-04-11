@@ -7,7 +7,6 @@ tags: [blog]
 
 Câu hỏi tưởng như đơn giản nhưng đã chạm tới **triết học – tâm linh – khoa học** cùng lúc
 
-<!-- truncate -->
 
 ---
 

@@ -7,7 +7,6 @@ tags: [blog]
 
 Đây là một dịch vụ của LiteSpeed/QUIC.cloud giúp cải thiện trải nghiệm tải ảnh khi bật Lazy Load, đặc biệt với các ảnh **above-the-fold** (ảnh hiển thị ngay khi mở trang).
 
-<!-- truncate -->
 ---
 
 ### I. Viewport Images

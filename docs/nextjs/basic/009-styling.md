@@ -6,7 +6,6 @@ sidebar_position: 9
 
 Next.js hỗ trợ nhiều phương pháp khác nhau để định kiểu (styling) cho ứng dụng, bao gồm **CSS Modules**, **CSS-in-JS**, **Styled Components**, và **Tailwind CSS**. Mỗi phương pháp có ưu và nhược điểm riêng, phù hợp với từng loại dự án.
 
-<!-- ![Create-HTML-1](images/state.png) -->
 
 <ToggleTOC />
 

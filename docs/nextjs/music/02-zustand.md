@@ -6,8 +6,6 @@ sidebar_position: 1
 
 Zustand là một thư viện quản lý state (trạng thái) cho React cực kỳ nhẹ, đơn giản và hiệu quả, rất phù hợp với Next.js và các app như music player.
 
-<!-- ![Create-HTML-1](images/state.png) -->
-
 <ToggleTOC />
 
 ---
@@ -137,7 +135,7 @@ const { toggle, volume } = usePlayer();
 
 ## 10. Code lại App nghe nhạc của bạn với Zustand
 
-#### 10.1 Cấu trúc thư mục đề xuất
+### 10.1 Cấu trúc thư mục đề xuất Music_v2
 
 ```css 
 src/
@@ -160,7 +158,7 @@ src/
 
 ```
 
-#### 10.2 Sửa Layout trong app/layout.tsx
+### 10.2 Sửa Layout trong app/layout.tsx
 
 ```tsx 
 import "./globals.css";
@@ -186,7 +184,7 @@ export default function RootLayout({
 }
 ```
 
-#### 10.3 Sửa Page trong app/page.tsx
+### 10.3 Sửa Page trong app/page.tsx
 
 ```tsx 
 export default function Home() {
@@ -201,7 +199,7 @@ export default function Home() {
 }
 ```
 
-#### 10.4 Sửa globals.css trong app/globals.css
+### 10.4 Sửa globals.css trong app/globals.css
 
 ```css 
 :root {
@@ -331,7 +329,7 @@ body {
 
 ```
 
-#### 10.5 Tạo file store/usePlayer.ts
+### 10.5 Tạo file store/usePlayer.ts
 
 ```ts
 import { create } from "zustand";
@@ -410,7 +408,7 @@ export const usePlayer = create<PlayerState>((set, get) => ({
 
 ```
 
-#### 10.6 Tạo file components/AudioEngine.tsx
+### 10.6 Tạo file components/AudioEngine.tsx
 
 ```tsx
 "use client";
@@ -459,7 +457,7 @@ export default function AudioEngine() {
 
 ```
 
-#### 10.7 Tạo file components/AudioPlayer.tsx
+### 10.7 Tạo file components/AudioPlayer.tsx
 
 ```tsx
 "use client";
@@ -536,7 +534,7 @@ export default function AudioPlayer() {
 
 ```
 
-#### 10.8 Tạo file components/CoverBackground.tsx
+### 10.8 Tạo file components/CoverBackground.tsx
 
 ```tsx
 "use client";
@@ -560,8 +558,9 @@ export default function CoverBackground() {
 }
 
 ```
+Source code: https://github.com/huudinh/music/tree/music_v2/public/music
 
-Link sau khi deploy: https://nhacdinh.vercel.app/
+Ứng dụng nghe nhạc:https://nhacdinh.vercel.app/
 
 ## 11. Nâng cấp tiếp theo (rất đáng làm)
 

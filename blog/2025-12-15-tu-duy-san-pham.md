@@ -7,7 +7,6 @@ tags: [blog]
 
 Là kỹ năng rất quan trọng quyết định sự thành công của một sản phẩm.  
 
-<!-- truncate -->
 
 ---
 

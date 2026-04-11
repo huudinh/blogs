@@ -7,8 +7,6 @@ tags: [blog]
 
 Khi tự đánh giá mình có học lực và tư duy logic ở mức “bình thường”...
 
-<!-- truncate -->
-
 Câu hỏi này rất thực tế và mình đã thẳng thắn nhìn nhận bản thân. Câu trả lời là: **hoàn toàn có thể theo đuổi lập trình Frontend**, ngay cả khi bạn tự đánh giá mình có học lực và tư duy logic ở mức “bình thường”.
 
 ---

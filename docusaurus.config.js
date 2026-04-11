@@ -120,6 +120,12 @@ const config = {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'nestjsSidebar',
+            position: 'left',
+            label: 'NestJS',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'reactNativeSidebar',
             position: 'left',
             label: 'React Native',

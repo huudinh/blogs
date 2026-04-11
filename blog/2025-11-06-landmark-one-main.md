@@ -8,7 +8,6 @@ tags: [blog]
 Điểm mốc chính giúp người dùng trình đọc màn hình dễ dàng thao tác trên trang web. 
 
 
-<!-- truncate -->
 
 Dưới đây là **tài liệu chi tiết** về chủ đề **“Landmark One Main (ID quy tắc: landmark-one-main)”** — được biên soạn dựa trên quy tắc của **axe-core 4.11**, hướng dẫn của **Deque Systems**, và mở rộng thêm về **tầm quan trọng trong SEO (bộ máy tìm kiếm)**
 

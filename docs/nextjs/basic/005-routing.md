@@ -6,7 +6,6 @@ sidebar_position: 5
 
 Next.js, framework JavaScript phổ biến cho phát triển ứng dụng web, cung cấp hệ thống routing mạnh mẽ và linh hoạt, giúp bạn dễ dàng tạo ra các ứng dụng web có cấu trúc rõ ràng và trải nghiệm người dùng mượt mà.
 
-<!-- ![Create-HTML-1](images/state.png) -->
 
 <ToggleTOC />
 

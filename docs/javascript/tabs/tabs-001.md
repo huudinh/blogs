@@ -6,7 +6,6 @@ sidebar_position: 1
 
 Tạo ứng dụng tabs gallery đơn giản 
 
-<!-- ![Create-HTML-1](images/state.png) -->
 
 <ToggleTOC />
 

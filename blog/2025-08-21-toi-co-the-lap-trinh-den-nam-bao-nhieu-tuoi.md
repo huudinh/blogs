@@ -7,8 +7,6 @@ tags: [blog]
 
 Người ta nói 40 tuổi là "ngưỡng cửa" cho lập trình viên, vậy tôi phải làm gì...
 
-<!-- truncate -->
-
 40 tuổi không phải là "ngưỡng cửa" cứng nhắc cho lập trình viên, nhưng đây thường là giai đoạn mà nhiều người trong ngành bắt đầu đánh giá lại sự nghiệp và định hướng tương lai. Ngành công nghệ thay đổi nhanh, và ở tuổi này, bạn có thể đã tích lũy được nhiều kinh nghiệm, nhưng cũng đối mặt với áp lực về việc duy trì năng lực cạnh tranh. Dưới đây là phân tích và gợi ý về những việc bạn có thể làm:
 
 ### 1. Hiểu bối cảnh tuổi 40 trong ngành lập trình

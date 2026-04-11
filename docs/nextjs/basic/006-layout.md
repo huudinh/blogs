@@ -6,7 +6,6 @@ sidebar_position: 6
 
 Layout trong Next.js là một tính năng mạnh mẽ giúp bạn tái sử dụng code HTML chung cho nhiều component khác nhau, giúp cho code gọn gàng, dễ bảo trì và hiệu quả hơn
 
-<!-- ![Create-HTML-1](images/state.png) -->
 
 <ToggleTOC />
 

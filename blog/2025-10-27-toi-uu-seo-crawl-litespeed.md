@@ -7,7 +7,6 @@ tags: [blog]
 
 Nếu mục tiêu của bạn là **giảm crawl CSS/JS** để tối ưu tốc độ tải trang và giảm tải cho bot (Googlebot, Bingbot...), **LiteSpeed Cache** cung cấp nhiều tính năng mạnh mẽ để kiểm soát cách các tài nguyên tĩnh như CSS và JS được xử lý.
 
-<!-- truncate -->
 
 ---
 

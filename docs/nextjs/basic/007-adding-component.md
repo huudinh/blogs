@@ -6,7 +6,6 @@ sidebar_position: 7
 
 Tạo và sử dụng các thành phần (component) của React trong ứng dụng Next.js — giúp chia nhỏ giao diện thành các khối tái sử dụng được.
 
-<!-- ![Create-HTML-1](images/state.png) -->
 
 <ToggleTOC />
 

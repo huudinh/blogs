@@ -9,8 +9,6 @@ Tạo ứng dụng nghe nhạc bằng nextjs với ChatGPT
 Dưới đây là **hướng dẫn tạo một ứng dụng nghe nhạc cơ bản bằng Next.js (App Router)** – phù hợp để bạn mở rộng thành sản phẩm hoàn chỉnh sau này 🎧
 (Mình làm theo hướng **đơn giản → nâng cao**, code sạch, dễ mở rộng)
 
-<!-- ![Create-HTML-1](images/state.png) -->
-
 <ToggleTOC />
 
 ---
@@ -40,7 +38,7 @@ Chọn:
 * Tailwind CSS ✅
 
 
-## 03. Cấu trúc thư mục đề xuất
+## 03. Cấu trúc thư mục đề xuất Music_v1
 
 ```
 music-player/

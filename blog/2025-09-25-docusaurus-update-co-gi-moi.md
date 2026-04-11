@@ -7,7 +7,6 @@ tags: [blog]
 
 Docusaurus 3.9 vừa ra mắt với một loạt cải tiến đáng chú ý dành cho các nhà phát triển web documentation. Đây là những điểm nổi bật nhất từ bản cập nhật này
 
-<!-- truncate -->
 
 ---
 

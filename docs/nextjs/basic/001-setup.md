@@ -6,8 +6,6 @@ sidebar_position: 1
 
 Các bước tạo ứng dụng NextJS
 
-<!-- ![Create-HTML-1](images/state.png) -->
-
 <ToggleTOC />
 
 ## I. Tạo ứng dụng
